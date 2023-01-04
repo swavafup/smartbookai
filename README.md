@@ -92,7 +92,7 @@ We may transmit personal information we possess in connection with a sale or tra
 <h2>CONTACTING US
 
 </h2>
-<p>If you have a question or complaint about how we handle your personal information, we ask that you put your inquiry in writing. We will investigate your inquiry and generally respond to you in writing within 30 days of receipt. You can also contact our us at legal@ClinTelMed.com</p>
+<p>If you have a question or complaint about how we handle your personal information, we ask that you put your inquiry in writing. We will investigate your inquiry and generally respond to you in writing within 30 days. You can also contact our us at legal@clintelmed.com</p>
 
 
 <h2>CHANGES
