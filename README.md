@@ -1,7 +1,4 @@
 <html>
-<head>
-    <title>Privacy Statement</title>
-</head>
 <body>
 
     <h1>1. Scope of this Privacy Statement</h1>
