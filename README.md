@@ -1,104 +1,69 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Statement</title>
+</head>
 <body>
-<p>our subsidiaries and affiliates (“we” or “us”) care about your privacy and are committed to processing your personal information in accordance with fair information practices and applicable data protection laws to better serve you.
-</p>
-<h2>SCOPE OF THIS PRIVACY STATEMENT
-</h2>
-<p>This Privacy Statement describes how  collects, uses, protects and shares your personal information when you use our Services online through our website, in retail and through our mobile app, as well as your choices about the way your information is collected and used. Personal information means all information relating to an identified or identifiable individual.
-</p>
-<h2>PERSONAL INFORMATION  COLLECTS
-</h2>
-<p>When you use our Services, contact us, access our websites or applications (collectively, the “Services”), we collect personal information about you and may use it along with other information collected or generated during our relationship with you. We collect different types of personal information relating to you, which may include:
 
-Contact information, for example your name, postal address, e-mail address, telephone number, and date of birth, gender, citizenship, occupation, marital status, and identification numbers;
-Technical information, including the host from which you access the Internet, your IP address or device advertising ID, geolocation if enabled, information about your device (such as device properties, settings, applications, storage and usage information), mobile application, browser and operating system software, social profile and network information, the date and time you access our websites and the address of the site from which you linked to our website when you visit us. We collect personal information on your online activities as described in the section titled “INTERNET TECHNOLOGIES.”
-Compliance information, including fraud prevention, identity verification, and sanction checks.
-</p>
-<h2>COLLECTING AND PROCESSING PERSONAL DATA</h2>
-<p>As with most applications, the following data is routinely collected during visits to our applications: the name of your service provider (IP address), the application that directed you to our application, the pages visited, your browser type, and the date and length of your visit. This information cannot be used to personally identify visitors. Additional details are only collected with a user’s permission, for instance during an online job application or when taking part in an online survey. Personal information provided during a visit to our applications is handled according to the legal guidelines of the United Arab Emirates.
-We collect personal data only when you have chosen to provide it to us through registration, completion of forms or emails, as part of an order for services, inquiries, or requests about our educational services.
-The database and its contents remain at our company and are held on data processors or servers acting on our behalf and responsible to us. Your personal data will not be passed on by us or by our agents for use by third parties in any form whatsoever, unless we have obtained your consent or are legally required to do so.
-We will retain control of and responsibility for the use of any personal data you disclose to us.
-</p>
-<h2>HOW  COLLECTS PERSONAL INFORMATION</h2>
-<p> collects your personal information in several ways:
+    <h1>1. Scope of this Privacy Statement</h1>
 
-Through online forms, registrations for loyalty and rewards programs or competitions, and other online Services we offer (some of which may be managed by third parties on behalf of );
-While providing customer support or consultation, including using email, postal mail, call centers or live chat;
-Through the process of maintaining and upgrading our Services;
-Through automated means such as communications protocols, e-mail communications and cookies or similar INTERNET TECHNOLOGIES;
-Through our mobile applications
-Through your use of social media or other public data sources; and
-Through your interest in  advertisements placed on third party sites.</p>
-<h2>HOW  SECURES YOUR PERSONAL INFORMATION
-</h2>
-<p>We endeavor to use reasonable organizational, technical and administrative safeguards that comply with applicable government laws and regulations to secure your personal information. We also endeavor to restrict information access to our employees, Agents and representatives that need to know it. Despite our efforts, and as you probably know, third parties may unlawfully intercept or access transmissions sent to us or may wrongly instruct you to disclose personal information to them while posing as .
+    <p>This Privacy Statement describes how ("we" or "us") collects, uses, protects, and shares your personal information when you use our Services online through our website, in retail, and through our mobile app. It also outlines your choices regarding the way your information is collected and used.</p>
 
-Please contact us immediately in accordance with the “CONTACTING US” section, if you have reason to believe your personal information held by  may be at risk.
-</p>
-<h2>INTERNET TECHNOLOGIES
-</h2>
-<p>We use internet technologies like cookies, tags and web beacons on our websites, in mobile applications or when you visit a third-party website for which  provides online Services for a variety of purposes, including, but not limited to those identified in the section titled “HOW  USES THE PERSONAL INFORMATION IT COLLECTS”.
+    <h1>2. Personal Information Collected</h1>
 
- has implemented the capability for the user to manage cookies on our websites. We may read or write cookies based on your preference level. (Note: cookies set prior to you changing your preference level are maintained on your computer; to remove them please refer to your browser settings and, if needed, your browser’s “Help” function.) If your browser does not support JavaScript, you can find out about the cookies used on our sites and can only manage the use of cookies through your web browser settings.
-</p>
-<h2>HOW  USES THE PERSONAL INFORMATION IT COLLECTS
-</h2>
-<p> utilizes the personal information it collects to:
+    <p>When you use our Services, we collect various types of personal information, including but not limited to:</p>
 
-To recognize you and allow you to remain signed-in during your visit without having to re-enter your password;
-To perform analytics on understanding our customers, improving their experience;
-To determine whether you came to  from a banner ad or an Affiliate;
-To deliver information specific to your interests on non- websites and applications;
-To better understand the effectiveness of our promotional campaigns and whether you acted on our promotional messages;</p>
+    <ul>
+        <li>Contact information: Name, postal address, email address, telephone number, date of birth, gender, citizenship, occupation, marital status, identification numbers.</li>
+        <li>Technical information: IP address, device advertising ID, geolocation, device details (properties, settings, applications, storage and usage information), browser and operating system information.</li>
+        <li>Compliance information: Fraud prevention, identity verification, and sanction checks.</li>
+    </ul>
 
-<h2>LEGAL BASES UPON WHICH WE USE YOUR PERSONAL INFORMATION
-</h2>
-<p> may use your personal information as explained elsewhere in this Statement for each of the following legal bases:
+    <h1>3. Collecting and Processing Personal Data</h1>
 
-We use your personal information for legitimate business purposes: This includes using personal information to analyze and improve our products, locations, services, operations, the running of this site and your customer experience, and for measuring marketing return on investment and brand satisfaction. This may include using your information to conduct market research surveys. We may also use your personal information to provide customer services and to help protect the security and integrity of our technology, systems, and services.
-We may process your personal information based on your consent as outlined in this Statement: This includes consent for receiving marketing communications, or where otherwise required by applicable law. If we request your consent, we will inform you of the intended purposes for which your information will be processed.</p>
+    <p>We collect personal data through online forms, registrations, customer support, and automated means such as cookies. Personal information is collected with your consent and used for various purposes, including analytics, improving user experience, and compliance information.</p>
 
-<h2> MARKETS TO ITS CUSTOMERS
-</h2>
-<p> will also, subject to your consent, notify you of offers, promotions and updates regarding our products and Services. These may include offers by email, telephone, postal mail, SMS, social media and other communication or digital channels.
+    <h1>4. How We Secure Your Personal Information</h1>
 
-You can opt out of receiving marketing communications at any time. If you no longer want to receive marketing-related communications from us on a going-forward basis, you may opt-out by following the instructions in the relevant electronic communication or by contacting us as described in the “CONTACTING US” section.</p>
+    <p>We employ organizational, technical, and administrative safeguards to secure your personal information. Access to information is restricted to employees, agents, and representatives who need it.</p>
 
-<h2>EXTERNAL WEBSITES
-</h2>
-<p>’s Website may be linked to or from third party websites.  has not reviewed, does not control, and is not responsible for the content or privacy practices employed by websites that are linked to or from our website.  does not assume responsibility for any of these sites, their content, or their privacy policies.  does not endorse third party websites or make any warranties about any information, software or other products or materials you may find there, or any results that may be obtained from using them.</p>
+    <h1>5. Internet Technologies</h1>
 
-<h2>WHO  SHARES YOUR DATA WITH
-</h2>
-<p>For any of the purposes listed in this Statement,  may disclose applicable personal information including, but not limited to, your name, contact information, national identification number, customer ID number and address information to the following types of organizations or parties:
+    <p>We use internet technologies like cookies, tags, and web beacons for various purposes, as described in detail in the section titled "HOW USES THE PERSONAL INFORMATION IT COLLECTS."</p>
 
- group companies and affiliates.
-Customer services, based on your consent where applicable, including marketing, advertising and customer satisfaction and market research on our behalf;
-Service providers and data processors contracted to help us validate the accuracy of the information provided by you, and to authenticate your identity and manage risks related to security, fraud and identity.
-We may transmit personal information we possess in connection with a sale or transfer of all or part of our business. We may also disclose your personal information globally, as required or permitted by applicable laws and regulations, to regulatory and financial authorities, law enforcement bodies, courts, governments or government agencies, to meet compliance and legal obligations or to assert or defend the rights and interests of  or others.</p>
+    <h1>6. How Uses the Personal Information It Collects</h1>
 
-<h2>RETENTION OF PERSONAL INFORMATION
-</h2>
-<p>We will retain your information only if necessary for the specific purposes it was collected, or to resolve any query you may raise. We will typically keep your information for no longer than the purpose(s) for which it was obtained, unless we have a legal obligation to keep it for a longer period or retention is advisable for ’s legal position (for example, regarding applicable statutes of limitations, litigation or regulatory investigations)</p>
+    <p>We use the collected personal information to recognize you, perform analytics, understand customer needs, and improve our products and services. Legal bases for processing include legitimate business purposes and consent.</p>
 
-<h2>ACCESSING, DELETING AND CORRECTING YOUR PERSONAL INFORMATION AND CHANGING YOUR CHOICES
+    <h1>7. Markets to Its Customers</h1>
 
-</h2>
-<p>You have the right to know if we are processing your personal information and to ask us for a copy of your information free of charge. You have the right to request a structured and machine-readable copy of certain information you have provided to us. We may charge you a reasonable fee for providing the information, or not act upon your request, if the request is manifestly unfounded or excessive. You have the right to stop us from sending you marketing communications. You have the right to ask us to correct information about you that is incomplete, inaccurate or out-of-date. You have the right to ask us to erase certain information about you, to restrict certain uses of information relating to you, and also to object to certain uses of it. To the extent we are processing personal information based on your consent, you may withdraw your consent as permitted by applicable law. Registered users may also visit .com.au and edit Profile settings. You also have the right to lodge a complaint with a relevant data protection regulator or supervisory authority about our processing of personal information. When we receive a request, we may ask for additional information from you to verify your identity. In some situations, we may refuse to act or may impose limitations on your rights, as permitted by applicable law. To exercise these rights, please  through the section titled “CONTACTING US”. We will endeavor to respond to your request within 30 days but may be entitled to extend this period in certain circumstances. We will comply with your request to the extent required by applicable law.</p>
+    <p>Subject to your consent, we may notify you of offers, promotions, and updates regarding our products and services through various channels.</p>
 
+    <h1>8. External Websites</h1>
 
+    <p>Our website may link to third-party websites, and we are not responsible for their content or privacy practices.</p>
 
-<h2>CONTACTING US
+    <h1>9. Who Shares Your Data With</h1>
 
-</h2>
-<p>If you have a question or complaint about how we handle your personal information, we ask that you put your inquiry in writing. We will investigate your inquiry and generally respond to you in writing within 30 days. You can also contact our us</p>
+    <p>We may disclose personal information to group companies, affiliates, service providers, and other parties as necessary for the purposes outlined in this statement.</p>
 
+    <h1>10. Retention of Personal Information</h1>
 
-<h2>CHANGES
+    <p>We retain your information only as long as necessary for the purposes for which it was collected, unless a longer retention period is required by law.</p>
 
-</h2>
-<p> reserves the right to modify this Privacy Statement. Updated privacy statements will be posted on this Website when amendments occur. We urge you to review this Privacy Statement when you visit to obtain the most current statement.</p>
+    <h1>11. Accessing, Deleting, and Correcting Your Personal Information</h1>
+
+    <p>You have the right to know if we are processing your personal information and can request a copy of your information. You can also request corrections, deletion, or express objections to certain uses of your data.</p>
+
+    <h1>12. Contacting Us</h1>
+
+    <p>If you have questions or complaints, please contact us through the methods provided in the "CONTACTING US" section.</p>
+
+    <h1>13. Changes</h1>
+
+    <p>We reserve the right to modify this Privacy Statement, and updated statements will be posted on our website.</p>
 
 </body>
 </html>
