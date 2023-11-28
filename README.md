@@ -36,8 +36,8 @@
  <p>You have the right to know if we are processing your personal information and can request a copy of your information. You can also request corrections, deletion, or express objections to certain uses of your data.</p>
 
  <h2>Metadata Policy</h2>
- <p>We may collect and process metadata associated with your use of our services. This metadata may include, but is not limited to, device information, IP addresses. We use this metadata for analytical purposes, to enhance user experience, and for compliance purposes outlined in this Privacy Statement.</p>
-
+ <p>We may collect and process metadata associated with your use of our services. This metadata may include, but is not limited to, device information, IP addresses. We use this metadata for enhance user experience.</p>
+ 
  <h2>Contacting Us</h2>
  <p>If you have questions or complaints, please contact us through the methods provided in the "CONTACTING US" section.</p>
 
