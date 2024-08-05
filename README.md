@@ -2,7 +2,6 @@
 
 <body>
 
- <h1>Privacy Policy</h1>
  <p><strong>Last Updated:</strong> 21/07/2024</p>
 
  <h2>Scope of this Privacy Statement</h2>
