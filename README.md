@@ -16,7 +16,7 @@
  <h2>Internet Technologies</h2>
  <p>We use internet technologies like cookies, tags, and web beacons for various purposes, as described in detail in the section titled "HOW S&S FOUNDATION USES THE PERSONAL INFORMATION IT COLLECTS."</p>
 
- <h2>How Milestone Lab Uses the Personal Information It Collects</h2>
+ <h2>How S&S Foundation Uses the Personal Information It Collects</h2>
  <p>We use the collected personal information to recognize you, perform analytics, understand customer needs, and improve our products and services. Legal bases for processing include legitimate business purposes and consent.</p>
 
  <h2>Markets to Its Customers</h2>
