@@ -5,7 +5,7 @@
  <p><strong>Last Updated:</strong> 21/07/2024</p>
 
  <h2>Scope of this Privacy Statement</h2>
- <p>This Privacy Statement describes how Halaify App ["we" or "us"] collect, use, protect, and share your personal information when you use our Services online through our website, in retail, and through our mobile app. It also outlines your choices regarding the way your information is collected and used.</p>
+ <p>This Privacy Statement describes how Rainy App ["we" or "us"] collect, use, protect, and share your personal information when you use our Services online through our website, in retail, and through our mobile app. It also outlines your choices regarding the way your information is collected and used.</p>
 
  <h2>Collecting and Processing Personal Data</h2>
  <p>We collect personal data through online forms, registrations, customer support, and automated means such as cookies. Personal information is collected with your consent and used for various purposes, including analytics, improving user experience, and compliance information.</p>
@@ -14,9 +14,9 @@
  <p>We employ organizational, technical, and administrative safeguards to secure your personal information. Access to information is restricted to employees, agents, and representatives who need it.</p>
 
  <h2>Internet Technologies</h2>
- <p>We use internet technologies like cookies, tags, and web beacons for various purposes, as described in detail in the section titled "HOW HALAIFY APP USES THE PERSONAL INFORMATION IT COLLECTS."</p>
+ <p>We use internet technologies like cookies, tags, and web beacons for various purposes, as described in detail in the section titled "HOW RAINY APP USES THE PERSONAL INFORMATION IT COLLECTS."</p>
 
- <h2>How Halaify App Uses the Personal Information It Collects</h2>
+ <h2>How Rainy App Uses the Personal Information It Collects</h2>
  <p>We use the collected personal information to recognize you, perform analytics, understand customer needs, and improve our products and services. Legal bases for processing include legitimate business purposes and consent.</p>
 
  <h2>Markets to Its Customers</h2>
