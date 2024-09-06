@@ -2,7 +2,7 @@
 
 <body>
 
- <p><strong>Last Updated:</strong> 21/07/2024</p>
+ <p><strong>Last Updated:</strong> 21/10/2024</p>
 
  <h2>Scope of this Privacy Statement</h2>
  <p>This Privacy Statement describes how Rainy App ["we" or "us"] collect, use, protect, and share your personal information when you use our Services online through our website, in retail, and through our mobile app. It also outlines your choices regarding the way your information is collected and used.</p>
