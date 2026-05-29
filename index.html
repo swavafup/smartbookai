@@ -1,10 +1,13 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Muhammed Swavaf | Research Profile</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+
 <style>
 :root{
     --primary:#57068c;
@@ -15,6 +18,7 @@
     --border:#e8e2ee;
     --white:#fff;
 }
+
 *{
     margin:0;
     padding:0;
@@ -149,7 +153,7 @@ a{
     justify-content:center;
 }
 
-.profile-main h2{
+.profile-main h1{
     font-family:'Source Serif 4',serif;
     font-size:64px;
     line-height:1;
@@ -339,7 +343,7 @@ a{
         padding:52px 30px;
     }
 
-    .profile-main h2{
+    .profile-main h1{
         font-size:42px;
     }
 
@@ -378,6 +382,7 @@ a{
 <nav class="top-nav">
     <a href="#about">About</a>
     <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
     <a href="#appointments">Appointments</a>
     <a href="#education">Education</a>
     <a href="#publications">Publications</a>
@@ -393,19 +398,22 @@ a{
     <img src="https://raw.githubusercontent.com/swavafup/smartbookai/main/milestone.jpg" alt="Muhammed Swavaf">
 </div>
 
-<h2>Muhammed Swavaf</h2>
+<h1>Muhammed Swavaf</h1>
 
 <p class="profile-role">
-Researcher
+Research Assistant · Data Scientist
 </p>
 
 <p class="institution">
-United Arab Emirates University
+United Arab Emirates University<br>
+Connected Autonomous Intelligent Systems Lab<br>
+AI and Robotics Lab
 </p>
 
 <div class="contact-info" id="contact">
     <p>📧 swavaf@hotmail.com</p>
-    <p>📍 Abu Dhabi, United Arab Emirates</p>
+    <p>📞 05262 79392</p>
+    <p>📍 Al Ain, United Arab Emirates</p>
     <p>
         <a href="https://www.linkedin.com/in/muhammed-swavaf/" target="_blank">
             LinkedIn Profile
@@ -414,10 +422,10 @@ United Arab Emirates University
 </div>
 
 <div class="academic-links">
-    <a href="#" target="_blank">Google Scholar</a>
-    <a href="#" target="_blank">ORCID</a>
-    <a href="#" target="_blank">GitHub</a>
-    <a href="#" target="_blank">ResearchGate</a>
+    <a href="https://scholar.google.com/citations?user=Ow-hR30AAAAJ" target="_blank">Google Scholar</a>
+    <a href="https://orcid.org/0009-0008-4545-8003" target="_blank">ORCID</a>
+    <a href="https://github.com/swavafup" target="_blank">GitHub</a>
+    <a href="https://www.researchgate.net/profile/Muhammed-Swavaf" target="_blank">ResearchGate</a>
 </div>
 
 </aside>
@@ -427,11 +435,12 @@ United Arab Emirates University
 <h1>Profile</h1>
 
 <p>
-Muhammed Swavaf is a Research Assistant at the United Arab Emirates
-University working in artificial intelligence, computer vision, deep
-learning, and autonomous systems. His research focuses on intelligent
-perception systems, vision transformers, object detection, semantic
-segmentation, GPU computing, and reproducible AI research.
+Muhammed Swavaf is a Research Assistant and Data Scientist at the United Arab Emirates
+University, working across artificial intelligence, computer vision, deep learning,
+robotics, geospatial intelligence, medical imaging, and autonomous systems. His research
+focuses on intelligent perception systems, UAV/drone imagery, road defect detection,
+semantic segmentation, vision transformers, driver distraction analysis, humanoid agents,
+GPU-accelerated deep learning, and reproducible AI research.
 </p>
 
 <div class="metrics">
@@ -447,14 +456,14 @@ segmentation, GPU computing, and reproducible AI research.
 </div>
 
 <div class="metric">
-    <h3>10+</h3>
+    <h3>11+</h3>
     <p>Publications</p>
 </div>
 
-<!-- <div class="metric">
-    <h3 id="visitorCount">...</h3>
-    <p>Visitors</p>
-</div> -->
+<div class="metric">
+    <h3>4+</h3>
+    <p>Awards</p>
+</div>
 
 </div>
 
@@ -465,9 +474,7 @@ segmentation, GPU computing, and reproducible AI research.
 <section class="section">
 <div class="section-inner">
 
-<div class="section-title">
-Research Interests
-</div>
+<div class="section-title">Research Interests</div>
 
 <div class="interests">
     <span>Computer Vision</span>
@@ -477,7 +484,12 @@ Research Interests
     <span>Autonomous Systems</span>
     <span>Object Detection</span>
     <span>Semantic Segmentation</span>
+    <span>Medical Imaging</span>
+    <span>Geospatial AI</span>
+    <span>Generative AI</span>
+    <span>Natural Language Processing</span>
     <span>GPU Computing</span>
+    <span>Human-Robot Interaction</span>
     <span>Reproducible AI</span>
 </div>
 
@@ -487,18 +499,24 @@ Research Interests
 <section class="section" id="research">
 <div class="section-inner">
 
-<div class="section-title">
-Current Research
-</div>
+<div class="section-title">Current Research</div>
 
 <div class="research-grid">
 
 <div class="research-card">
     <h3>AI-Based Autonomous Perception</h3>
     <p>
-        Developing robust computer vision pipelines for autonomous
-        navigation, intelligent robotics, and real-time environmental
-        understanding.
+        Developing robust computer vision pipelines for autonomous navigation,
+        intelligent robotics, and real-time environmental understanding.
+    </p>
+</div>
+
+<div class="research-card">
+    <h3>Geospatial AI & Smart Mobility</h3>
+    <p>
+        Building UAV/drone imagery-based object detection, road defect detection,
+        crack segmentation, and transportation analytics systems using deep learning,
+        GIS, and high-performance GPU computing.
     </p>
 </div>
 
@@ -506,15 +524,95 @@ Current Research
     <h3>Vision Transformers</h3>
     <p>
         Exploring transformer-based architectures for scene understanding,
-        semantic segmentation, object detection, and visual reasoning.
+        semantic segmentation, object detection, crack detection, and visual reasoning.
+    </p>
+</div>
+
+<div class="research-card">
+    <h3>Medical Imaging AI</h3>
+    <p>
+        Conducting deep learning research on MRI-based brain tumor classification,
+        segmentation, and evaluation of foundation models such as Segment Anything Model.
+    </p>
+</div>
+
+<div class="research-card">
+    <h3>Human-Robot Interaction</h3>
+    <p>
+        Studying emotional perception, humanoid agents, driver reminders, sentiment analysis,
+        NLP, and AI-based educational interaction systems.
     </p>
 </div>
 
 <div class="research-card">
     <h3>Applied Deep Learning Systems</h3>
     <p>
-        Building scalable AI systems using PyTorch, TensorFlow, OpenCV,
-        CUDA-enabled GPU computing, and reproducible experimentation.
+        Building scalable AI systems using Python, PyTorch, TensorFlow, OpenCV,
+        CUDA-enabled GPU computing, NVIDIA DGX-1, A100 HPC clusters, and reproducible workflows.
+    </p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section" id="projects">
+<div class="section-inner">
+
+<div class="section-title">Selected Projects</div>
+
+<div class="research-grid">
+
+<div class="research-card">
+    <h3>Research Applications Portal</h3>
+    <p>
+        Developed a comprehensive CIT research website using Microsoft SharePoint,
+        Power Apps, and Power BI, including request management, role-based access control,
+        research lab pages, and graduate studies information.
+    </p>
+</div>
+
+<div class="research-card">
+    <h3>HPC Applications</h3>
+    <p>
+        Leveraged NVIDIA DGX-1 and A100 systems to optimize training and deployment of
+        deep learning models, and designed a user-friendly interface for researchers and
+        students to access GPU resources.
+    </p>
+</div>
+
+<div class="research-card">
+    <h3>Crack Detection</h3>
+    <p>
+        Collaborated with the Emirates Center for Mobility Research to develop
+        vision transformer-based models for detecting and geolocating surface cracks
+        in stone floor tiles and pavements using high-resolution geospatial imagery.
+    </p>
+</div>
+
+<div class="research-card">
+    <h3>Driver Distraction Analysis</h3>
+    <p>
+        Developed simulator-based systems to study driver responses to text, image,
+        alarm, and voice command reminders, contributing insights into human-vehicle
+        interaction in autonomous vehicles.
+    </p>
+</div>
+
+<div class="research-card">
+    <h3>Medical Imaging</h3>
+    <p>
+        Conducted computer vision research for brain tumor classification and segmentation
+        using deep learning methodologies in association with data science and analytics teams.
+    </p>
+</div>
+
+<div class="research-card">
+    <h3>Humanoid Agents</h3>
+    <p>
+        Partnered with Western Sydney University to study emotional perception and responses
+        to auditory changes in humanoid agents using machine learning and behavioral analysis.
     </p>
 </div>
 
@@ -526,36 +624,63 @@ Current Research
 <section class="section" id="appointments">
 <div class="section-inner">
 
-<div class="section-title">
-Appointments
-</div>
+<div class="section-title">Appointments</div>
 
 <div class="entry">
     <div class="entry-date">2022 – Present</div>
-
     <div class="entry-content">
-        <h3>Research Assistant</h3>
-        <strong>United Arab Emirates University</strong>
-
+        <h3>Research Assistant · Data Scientist</h3>
+        <strong>United Arab Emirates University, Al Ain, UAE</strong>
         <ul>
-            <li>Designed AI-driven computer vision and perception pipelines.</li>
-            <li>Developed CNN and Vision Transformer models for applied research problems.</li>
-            <li>Conducted large-scale GPU-based experiments and model evaluations.</li>
-            <li>Mentored and supervised 30+ student research and development projects.</li>
+            <li>Develop AI-powered object detection models using UAV/drone imagery for geospatial intelligence and transportation analytics.</li>
+            <li>Train deep learning models on large-scale geospatial and medical datasets using NVIDIA DGX-1 and A100 HPC clusters.</li>
+            <li>Build CNN and Vision Transformer models for object detection, segmentation, road defect detection, and smart mobility applications.</li>
+            <li>Develop AI-driven humanoid interaction systems using NAO and Pepper robots.</li>
+            <li>Explore AI applications in education using NLP, sentiment analysis, and emotion recognition.</li>
+            <li>Conduct medical imaging research including brain tumor classification and segmentation.</li>
+            <li>Design scalable data pipelines for transportation, remote sensing, and geospatial datasets.</li>
+            <li>Build SharePoint, Power Apps, Power BI, and Tableau systems to automate research workflows and visualization dashboards.</li>
+            <li>Collaborate with UAE Ministry of Education, Western Sydney University, KFSHRC Jeddah, transportation agencies, and industry partners.</li>
+            <li>Mentor and supervise 30+ student research and development projects.</li>
         </ul>
     </div>
 </div>
+
 <div class="entry">
     <div class="entry-date">2019 – 2022</div>
-
     <div class="entry-content">
-        <h3>Software & Research Development</h3>
-        <strong>Bakaal Technologies LLC</strong>
-
+        <h3>Lead Software Developer</h3>
+        <strong>Bakaal Technologies LLC, Dubai, UAE</strong>
         <ul>
-            <li>Developed enterprise web, mobile, and analytics systems.</li>
-            <li>Built dashboards, reporting tools, and data-driven applications.</li>
+            <li>Designed and developed native and hybrid Flutter financial mobile applications for Android and iOS.</li>
+            <li>Created .NET web applications and REST APIs for business functionality and finance integrations.</li>
+            <li>Analyzed large datasets to identify actionable insights, trends, and patterns for financial decision-making.</li>
+            <li>Built dashboards using Tableau, Power BI, and Google Analytics for business intelligence and stakeholder reporting.</li>
             <li>Mentored junior developers and interns on software engineering practices.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="entry">
+    <div class="entry-date">2017 – 2018</div>
+    <div class="entry-content">
+        <h3>Software Developer</h3>
+        <strong>Lulu Group International, Cochin, India</strong>
+        <ul>
+            <li>Designed and developed native and hybrid Ionic e-commerce mobile applications for Android and iOS.</li>
+            <li>Created .NET web applications and REST APIs for retail business systems.</li>
+            <li>Implemented A/B testing frameworks for continuous improvement of e-commerce platforms.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="entry">
+    <div class="entry-date">2016</div>
+    <div class="entry-content">
+        <h3>Developer Internship</h3>
+        <strong>Tridz Technologies, Bangalore, India</strong>
+        <ul>
+            <li>Designed and developed native and hybrid mobile applications for Android and iOS platforms.</li>
         </ul>
     </div>
 </div>
@@ -566,9 +691,7 @@ Appointments
 <section class="section" id="education">
 <div class="section-inner">
 
-<div class="section-title">
-Education
-</div>
+<div class="section-title">Education</div>
 
 <div class="entry">
     <div class="entry-date">2025 – 2029</div>
@@ -581,16 +704,24 @@ Education
 <div class="entry">
     <div class="entry-date">2012 – 2015</div>
     <div class="entry-content">
-        <h3>Master in Computer Science</h3>
+        <h3>Master in Computer Applications</h3>
         <p>Government Engineering College Thrissur</p>
+        <p>
+            Main project: Intelligent Mobile Emergency Road Assistance Tool,
+            a GPS-based web and Android application for rapid vehicle service response.
+        </p>
     </div>
 </div>
 
 <div class="entry">
     <div class="entry-date">2009 – 2012</div>
     <div class="entry-content">
-        <h3>Bachelor in Computer Science</h3>
+        <h3>BSc in Computer Science with Mathematics</h3>
         <p>University of Calicut</p>
+        <p>
+            Main project: Integrated online shop locator system in .NET to enhance
+            consumer experience and accessibility.
+        </p>
     </div>
 </div>
 
@@ -600,33 +731,73 @@ Education
 <section class="section" id="publications">
 <div class="section-inner">
 
-<div class="section-title">
-Selected Publications
-</div>
+<div class="section-title">Selected Publications</div>
 
-<!-- <div class="publication">
-    <p>
-        <strong>Swavaf, M.</strong>, Author 2, Author 3.
-        “Title of Research Paper.”
-        <em>Journal / Conference Name</em>, 2025.
-    </p>
+<div class="publication">
+    <p><strong>Zhao Zou, Fady Alnajjar, Michael Lwin, Abdullah Al Mahmud, Aila Khan, Muhammed Swavaf, Omar Mubin.</strong>
+    “A Pilot Study on the Effectiveness of Text and Humanoid Voice Reminders for Drivers in a Simulator-Based Environment.”
+    <em>IEEE International Conference on Activity and Behavior Computing</em>, 2025.</p>
 </div>
 
 <div class="publication">
-    <p>
-        <strong>Swavaf, M.</strong>, Author 2.
-        “Title of Research Paper.”
-        <em>Journal / Conference Name</em>, 2024.
-    </p>
+    <p><strong>Luqman Ali, Muhammed Swavaf, Fady Alnajjar, Zhao Zou, Medha Mohan, Omar Mubin, Hamad Al Jassmi.</strong>
+    “Enhancing road safety with DL vision: Do driver distraction alerts hold the key?”
+    <em>Neural Computing and Applications</em>, 2025.</p>
 </div>
 
 <div class="publication">
-    <p>
-        <strong>Swavaf, M.</strong>, Author 2, Author 3.
-        “Title of Research Paper.”
-        <em>Journal / Conference Name</em>, 2023.
-    </p>
-</div> -->
+    <p><strong>Zhao Zou, Fady Alnajjar, Michael Lwin, Luqman Ali, Hamad Al Jassmi, Omar Mubin, Muhammed Swavaf.</strong>
+    “A preliminary simulator study on exploring responses of drivers to driving system reminders on four stimuli in vehicles.”
+    <em>Scientific Reports</em>, 2025.</p>
+</div>
+
+<div class="publication">
+    <p><strong>Luqman Ali, Medha Mohan, Muhammed Swavaf, Fady Alnajjar, Hamad Aljassmi, Adriaan De Man.</strong>
+    “SWIN and Vision Transformer-Driven Crack Detection in the Al Qattara Oasis, UAE: Towards Sustainable Infrastructure Management.”
+    <em>IEEE/ACM International Conference on Big Data Computing</em>, 2024.</p>
+</div>
+
+<div class="publication">
+    <p><strong>Luqman Ali, Fady Alnajjar, Muhammed Swavaf, Omar Elharrouss, Alaa Ali Abd-alrazaq, Rafat Damseh.</strong>
+    “Evaluating Segment Anything Model on MRI scans of brain tumors.”
+    <em>Scientific Reports</em>, 2024.</p>
+</div>
+
+<div class="publication">
+    <p><strong>Fady Alnajjar, Alreem R. Alneyadi, Habiba Almetnawy, Khawla S. Alneyadi, Fatima Alhemeiri, Amna R. Alneyadi, Ahed Orabi, Muhammed Swavaf.</strong>
+    “Exploring the Pedagogical Potential of Large Language Models: A Multimodal Study on Student Learning Outcomes.”
+    <em>International Workshop on Artificial Intelligence and Education</em>, 2024.</p>
+</div>
+
+<div class="publication">
+    <p><strong>Luqman Ali, Hamad Aljassmi, Muhammed Swavaf, Wasif Khan, Fady Alnajjar.</strong>
+    “RS-Net: Residual Sharp U-Net architecture for pavement crack segmentation and severity assessment.”
+    <em>Journal of Big Data</em>, 2024.</p>
+</div>
+
+<div class="publication">
+    <p><strong>Medha Mohan, Luqman Ali, Muhammed Swavaf, Salah Bouktif, Munkhjargal Gochoo, Hamad Aljassmi, Fady Alnajjar.</strong>
+    “Navigating the YOLO landscape: A comparative study of Object detection models for Emotion Recognition.”
+    <em>IEEE</em>, 2024.</p>
+</div>
+
+<div class="publication">
+    <p><strong>Zhao Zou, Fady Alnajjar, Michael Lwin, Abdullah Al Mahmud, Muhammed Swavaf, Aila Khan, Omar Mubin.</strong>
+    “Human Perception of Emotional Responses to Changes in Auditory Attributes of Humanoid Agents.”
+    <em>International Conference on Social Robotics</em>, 2023.</p>
+</div>
+
+<div class="publication">
+    <p><strong>Medha Mohan, Fady Alnajjar, Amna Mohammed, Zouheir Trabelsi, Luqman Ali, Muhammed Swavaf.</strong>
+    “Visualizing Student Attention in Smart Classrooms: A Preliminary Study.”
+    <em>International Conference on Innovations in Information Technology</em>, 2023.</p>
+</div>
+
+<div class="publication">
+    <p><strong>Luqman Ali, Hamad Al Jassmi, Medha Mohan, Muhammed Swavaf, Fady Alnajjar, Mohammed Alameri.</strong>
+    “Crack Detection and Localization in Stone Floor Tiles using Vision Transformer approach.”
+    <em>International Symposium on Automation and Robotics in Construction</em>, 2023.</p>
+</div>
 
 </div>
 </section>
@@ -634,23 +805,46 @@ Selected Publications
 <section class="section">
 <div class="section-inner">
 
-<div class="section-title">
-Technical Expertise
-</div>
+<div class="section-title">Technical Expertise</div>
 
 <div class="skills">
     <span>Python</span>
-    <span>PyTorch</span>
-    <span>TensorFlow</span>
-    <span>OpenCV</span>
-    <span>CUDA</span>
-    <span>Docker</span>
     <span>SQL</span>
     <span>Java</span>
     <span>C++</span>
+    <span>Swift</span>
     <span>.NET</span>
+    <span>JavaScript</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>Dart</span>
+    <span>PyTorch</span>
+    <span>TensorFlow</span>
+    <span>Keras</span>
+    <span>Scikit-learn</span>
+    <span>OpenCV</span>
+    <span>NumPy</span>
+    <span>Pandas</span>
+    <span>PySpark</span>
+    <span>CUDA</span>
+    <span>NVIDIA DGX-1</span>
+    <span>A100 GPU</span>
+    <span>Docker</span>
+    <span>Kubernetes</span>
+    <span>Flutter</span>
+    <span>React Native</span>
+    <span>Android Studio</span>
+    <span>Xcode</span>
+    <span>ArcGIS</span>
+    <span>QGIS</span>
+    <span>SharePoint</span>
+    <span>Power Apps</span>
     <span>Power BI</span>
     <span>Tableau</span>
+    <span>Google Analytics</span>
+    <span>Fusion 360</span>
+    <span>Ultimaker Cura</span>
+    <span>Raspberry Pi</span>
 </div>
 
 </div>
@@ -659,14 +853,13 @@ Technical Expertise
 <section class="section" id="awards">
 <div class="section-inner">
 
-<div class="section-title">
-Awards & Recognition
-</div>
+<div class="section-title">Awards & Recognition</div>
 
 <ul class="awards">
-    <li>First Prize, AI & IoT Excellence Award, IEEE UAE, 2023</li>
-    <li>First Prize, UAE Hackathon Researchers Track, TDRA, 2023</li>
-    <li>Appreciation Award, DRIFTx Exhibition, UAEU, 2024</li>
+    <li>Appreciation Award for participation at DRIFTx Exhibition, Abu Dhabi, UAEU Associate Provost for Research, 2024.</li>
+    <li>First Prize, AI and IoT Excellence Award, Government Track, IEEE Global Conference on AI & IoT, UAE, 2023.</li>
+    <li>First Prize, UAE Hackathon Researchers Track, Telecommunications and Digital Government Regulatory Authority, UAE, 2023.</li>
+    <li>Best Demonstration Award, Abu Dhabi AI Connect, Technology Innovation Institute Abu Dhabi, 2022.</li>
 </ul>
 
 </div>
@@ -675,16 +868,15 @@ Awards & Recognition
 <section class="section">
 <div class="section-inner">
 
-<div class="section-title">
-Research Vision
-</div>
+<div class="section-title">Research Vision</div>
 
 <p>
-My long-term research goal is to develop intelligent perception systems
-capable of understanding complex real-world environments through advanced
-machine learning, computer vision, and multimodal reasoning. I am
-particularly interested in bridging foundational AI research with deployable
-autonomous systems and practical intelligent applications.
+My long-term research goal is to develop intelligent perception systems capable of
+understanding complex real-world environments through advanced machine learning,
+computer vision, multimodal reasoning, and scalable AI infrastructure. I am particularly
+interested in bridging foundational AI research with deployable autonomous systems,
+smart mobility, medical imaging, human-robot interaction, and practical intelligent
+applications that create measurable social and scientific impact.
 </p>
 
 </div>
@@ -707,12 +899,29 @@ async function loadVisitors() {
         const data = await response.json();
         const count = data.value.toLocaleString();
 
-        document.getElementById("visitorCount").textContent = count;
-        document.getElementById("footerVisitorCount").textContent = count;
+        const visitorCount = document.getElementById("visitorCount");
+        const footerVisitorCount = document.getElementById("footerVisitorCount");
+
+        if (visitorCount) {
+            visitorCount.textContent = count;
+        }
+
+        if (footerVisitorCount) {
+            footerVisitorCount.textContent = count;
+        }
 
     } catch (error) {
-        document.getElementById("visitorCount").textContent = "--";
-        document.getElementById("footerVisitorCount").textContent = "--";
+        const visitorCount = document.getElementById("visitorCount");
+        const footerVisitorCount = document.getElementById("footerVisitorCount");
+
+        if (visitorCount) {
+            visitorCount.textContent = "--";
+        }
+
+        if (footerVisitorCount) {
+            footerVisitorCount.textContent = "--";
+        }
+
         console.error(error);
     }
 }
@@ -722,3 +931,4 @@ loadVisitors();
 
 </body>
 </html>
+```
