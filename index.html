@@ -236,6 +236,19 @@ body{
 
 }
 
+.certificate-row{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.certificate-row img{
+    width:100%;
+    border:1px solid var(--border);
+    border-radius:12px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.08);
+}
+
 </style>
 </head>
 
@@ -465,6 +478,20 @@ async function loadVisitors() {
 
 loadVisitors();
 </script>
+
+<section class="section">
+
+<div class="section-title">
+Certificates
+</div>
+
+<div class="certificate-row">
+    <img src="certificate1.jpg" alt="Certificate 1">
+    <img src="certificate2.jpg" alt="Certificate 2">
+    <img src="certificate3.jpg" alt="Certificate 3">
+</div>
+
+</section>
 
 </body>
 </html>
