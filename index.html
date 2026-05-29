@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Muhammed Swavaf | Research Profile</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+
 <style>
 
 :root{
@@ -26,8 +28,6 @@ body{
     line-height:1.8;
     background:#fff;
 }
-
-/* HEADER */
 
 .profile-header{
     display:grid;
@@ -56,7 +56,7 @@ body{
     object-fit:cover;
 }
 
-.profile-sidebar h1{
+.profile-sidebar h2{
     font-family:'Source Serif 4',serif;
     font-size:42px;
     line-height:1.05;
@@ -83,6 +83,7 @@ body{
 .contact-info p{
     margin-bottom:10px;
 }
+
 .profile-main{
     padding:80px;
     display:flex;
@@ -90,7 +91,7 @@ body{
     justify-content:center;
 }
 
-.profile-main h2{
+.profile-main h3{
     font-family:'Source Serif 4',serif;
     font-size:64px;
     line-height:1;
@@ -101,8 +102,6 @@ body{
     font-size:21px;
     max-width:900px;
 }
-
-/* SECTIONS */
 
 .section{
     padding:60px 8%;
@@ -204,7 +203,13 @@ body{
     font-weight:700;
 }
 
-/* MOBILE */
+.awards{
+    padding-left:20px;
+}
+
+.awards li{
+    margin-bottom:12px;
+}
 
 @media(max-width:900px){
 
@@ -216,7 +221,7 @@ body{
     padding:50px 30px;
 }
 
-.profile-main h2{
+.profile-main h3{
     font-size:42px;
 }
 
@@ -258,8 +263,14 @@ Computer Vision
 <div class="contact-info">
 <p>📧 swavaf@hotmail.com</p>
 <p>📍 Abu Dhabi, UAE</p>
+
 <p>
-<a href="https://www.linkedin.com/in/muhammed-swavaf/">
+👁️ Profile Views:
+<strong id="sidebarVisitorCount">...</strong>
+</p>
+
+<p>
+<a href="https://www.linkedin.com/in/muhammed-swavaf/" target="_blank">
 LinkedIn Profile
 </a>
 </p>
@@ -279,6 +290,7 @@ GPU computing and mentoring research teams.
 </p>
 
 <div class="metrics">
+
 <div class="metric">
 <h4>7+</h4>
 <p>Years Experience</p>
@@ -295,9 +307,10 @@ GPU computing and mentoring research teams.
 </div>
 
 <div class="metric">
-<h4>3</h4>
-<p>Research Areas</p>
+<h4 id="visitorCount">...</h4>
+<p>Visitors</p>
 </div>
+
 </div>
 
 </div>
@@ -329,9 +342,7 @@ Appointments
 </div>
 
 <div class="entry">
-<div class="entry-date">
-2022 – Present
-</div>
+<div class="entry-date">2022 – Present</div>
 
 <div class="entry-content">
 <h3>Research Assistant</h3>
@@ -347,9 +358,7 @@ Appointments
 </div>
 
 <div class="entry">
-<div class="entry-date">
-2019 – 2022
-</div>
+<div class="entry-date">2019 – 2022</div>
 
 <div class="entry-content">
 <h3>Software & Research Development</h3>
@@ -419,19 +428,48 @@ Technical Skills
 </div>
 
 </section>
+
 <section class="section">
 
 <div class="section-title">
 Awards & Recognition
 </div>
 
-<ul>
+<ul class="awards">
 <li>First Prize, AI & IoT Excellence Award, IEEE UAE (2023)</li>
 <li>First Prize, UAE Hackathon Researchers Track, TDRA (2023)</li>
 <li>Appreciation Award, DRIFTx Exhibition, UAEU (2024)</li>
 </ul>
 
 </section>
+
+<script>
+async function loadVisitors() {
+    try {
+
+        const response = await fetch(
+            "https://api.countapi.xyz/hit/swavaf-research-profile/visits"
+        );
+
+        const data = await response.json();
+
+        document.getElementById("visitorCount").textContent =
+            data.value.toLocaleString();
+
+        document.getElementById("sidebarVisitorCount").textContent =
+            data.value.toLocaleString();
+
+    } catch (error) {
+
+        document.getElementById("visitorCount").textContent = "--";
+        document.getElementById("sidebarVisitorCount").textContent = "--";
+
+        console.error(error);
+    }
+}
+
+loadVisitors();
+</script>
 
 </body>
 </html>
