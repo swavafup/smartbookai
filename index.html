@@ -1,85 +1,254 @@
-<div id="fh5co-main">
+.nyu-profile-main {
+  background: #ffffff;
+}
 
-<section class="resume-hero">
-  <h1>Muhammed Swavaf</h1>
-  <h2>Research Assistant | AI, Computer Vision & Medical Imaging</h2>
-  <p>Abu Dhabi, UAE · swavaf@hotmail.com · 
-    <a href="https://www.linkedin.com/in/muhammed-swavaf/">LinkedIn</a>
-  </p>
+.nyu-profile-header {
+  display: grid;
+  grid-template-columns: 330px 1fr;
+  border-bottom: 1px solid #ddd;
+  min-height: 430px;
+}
+
+.nyu-profile-left {
+  background: #57068c;
+  color: #ffffff;
+  padding: 55px 38px;
+}
+
+.profile-photo-placeholder {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #57068c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 28px;
+}
+
+.nyu-profile-left h1 {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 38px;
+  line-height: 1.05;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.profile-role {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 13px;
+}
+
+.nyu-profile-left p {
+  color: rgba(255,255,255,0.86);
+}
+
+.profile-contact {
+  margin-top: 28px;
+}
+
+.profile-contact a {
+  display: block;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.nyu-profile-right {
+  padding: 70px 8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nyu-profile-right h2 {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 58px;
+  color: #111;
+  letter-spacing: -0.05em;
+  margin-bottom: 24px;
+}
+
+.nyu-profile-right p {
+  max-width: 850px;
+  font-size: 21px;
+  line-height: 1.75;
+  color: #333;
+}
+
+.nyu-resume-section {
+  padding: 46px 8vw;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.nyu-resume-section h3 {
+  color: #57068c;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.nyu-entry {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 34px;
+  margin-bottom: 34px;
+}
+
+.nyu-entry-date {
+  font-size: 13px;
+  font-weight: 900;
+  color: #57068c;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.nyu-entry h4 {
+  margin: 0 0 6px;
+  font-size: 25px;
+  font-weight: 800;
+  color: #111;
+}
+
+.nyu-entry p,
+.nyu-entry li,
+.nyu-resume-section p,
+.nyu-resume-section li {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #333;
+}
+
+.nyu-interest-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nyu-interest-list span {
+  border: 1px solid #57068c;
+  color: #57068c;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 900px) {
+  .nyu-profile-header {
+    grid-template-columns: 1fr;
+  }
+
+  .nyu-entry {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .nyu-profile-right h2 {
+    font-size: 42px;
+  }
+}
+
+<div id="fh5co-main" class="nyu-profile-main">
+
+<section class="nyu-profile-header">
+  <div class="nyu-profile-left">
+    <div class="profile-photo-placeholder">MS</div>
+    <h1>Muhammed Swavaf</h1>
+    <p class="profile-role">Research Assistant</p>
+    <p>Artificial Intelligence · Computer Vision · Medical Imaging</p>
+
+    <div class="profile-contact">
+      <a href="mailto:swavaf@hotmail.com">swavaf@hotmail.com</a>
+      <a href="https://www.linkedin.com/in/muhammed-swavaf/">LinkedIn Profile</a>
+    </div>
+  </div>
+
+  <div class="nyu-profile-right">
+    <h2>Research Profile</h2>
+    <p>
+      Research Assistant with 7+ years of experience in machine learning,
+      deep learning, computer vision, medical imaging and intelligent systems.
+      My work focuses on reproducible AI pipelines, GPU-based experimentation,
+      applied perception systems and research mentoring.
+    </p>
+  </div>
 </section>
 
-<section class="resume-section">
-  <h3>Professional Summary</h3>
-  <p>
-    Research Assistant with 7+ years of experience in artificial intelligence,
-    machine learning, computer vision, medical imaging and intelligent systems.
-    Skilled in developing reproducible AI pipelines, conducting large-scale GPU
-    experiments, mentoring researchers and translating research ideas into
-    deployable systems.
-  </p>
-</section>
-
-<section class="resume-section">
-  <h3>Core Expertise</h3>
-  <div class="resume-tags">
-    <span>Machine Learning</span>
-    <span>Deep Learning</span>
+<section class="nyu-resume-section">
+  <h3>Research Interests</h3>
+  <div class="nyu-interest-list">
     <span>Computer Vision</span>
-    <span>Medical Imaging</span>
-    <span>Object Detection</span>
-    <span>Semantic Segmentation</span>
+    <span>Medical AI</span>
+    <span>Deep Learning</span>
     <span>Vision Transformers</span>
-    <span>GPU Computing</span>
-    <span>Research Mentoring</span>
+    <span>Autonomous Systems</span>
+    <span>Robotics</span>
+    <span>Semantic Segmentation</span>
+    <span>Object Detection</span>
   </div>
 </section>
 
-<section class="resume-section">
-  <h3>Experience</h3>
+<section class="nyu-resume-section">
+  <h3>Appointments</h3>
 
-  <div class="resume-item">
-    <div class="resume-head">
-      <div>
-        <h4>Research Assistant</h4>
-        <strong>United Arab Emirates University, Al Ain</strong>
-      </div>
-      <span>Sep 2022 – Present</span>
+  <div class="nyu-entry">
+    <div class="nyu-entry-date">Sep 2022 – Present</div>
+    <div>
+      <h4>Research Assistant</h4>
+      <p><strong>United Arab Emirates University, Al Ain</strong></p>
+      <ul>
+        <li>Designed AI-driven computer vision pipelines for safety-critical perception tasks.</li>
+        <li>Developed CNN and Vision Transformer models for object detection, segmentation and scene analysis.</li>
+        <li>Conducted large-scale experiments on NVIDIA DGX-1, A100 and L40S GPU platforms.</li>
+        <li>Supervised 30+ undergraduate and graduate research projects.</li>
+      </ul>
     </div>
-    <ul>
-      <li>Designed AI-driven computer vision pipelines for safety-critical perception tasks.</li>
-      <li>Developed CNN and Vision Transformer models for object detection, segmentation and scene analysis.</li>
-      <li>Conducted large-scale experiments on NVIDIA DGX-1, A100 and L40S GPU platforms.</li>
-      <li>Supervised 30+ undergraduate and graduate research projects.</li>
-    </ul>
   </div>
 
-  <div class="resume-item">
-    <div class="resume-head">
-      <div>
-        <h4>Software & Research Development</h4>
-        <strong>Bakaal Technologies LLC, Dubai</strong>
-      </div>
-      <span>Mar 2019 – Aug 2022</span>
+  <div class="nyu-entry">
+    <div class="nyu-entry-date">Mar 2019 – Aug 2022</div>
+    <div>
+      <h4>Software & Research Development</h4>
+      <p><strong>Bakaal Technologies LLC, Dubai</strong></p>
+      <ul>
+        <li>Led mobile and web financial application development.</li>
+        <li>Built analytics dashboards using Tableau, Power BI and Google Analytics.</li>
+        <li>Mentored junior developers and interns.</li>
+      </ul>
     </div>
-    <ul>
-      <li>Led mobile and web financial application development.</li>
-      <li>Built analytics dashboards using Tableau, Power BI and Google Analytics.</li>
-      <li>Mentored junior developers and interns.</li>
-    </ul>
   </div>
 </section>
 
-<section class="resume-section">
+<section class="nyu-resume-section">
   <h3>Selected Projects</h3>
-  <div class="resume-grid">
+
+  <div class="nyu-entry">
+    <div class="nyu-entry-date">AI Systems</div>
     <div>
       <h4>Autonomous Systems & IoT Lab</h4>
       <p>GPU-based workflows for drones, unmanned systems and deep learning training.</p>
     </div>
+  </div>
+
+  <div class="nyu-entry">
+    <div class="nyu-entry-date">Mobility AI</div>
     <div>
       <h4>Emirates Center for Mobility Research</h4>
-      <p>Crack detection, object localization and semantic segmentation research.</p>
+      <p>Crack detection, object localization and semantic segmentation using CNNs and Vision Transformers.</p>
     </div>
+  </div>
+
+  <div class="nyu-entry">
+    <div class="nyu-entry-date">Robotics</div>
     <div>
       <h4>AI & Robotics Lab</h4>
       <p>Brain tumor analysis, robot perception, speech systems and emotion recognition.</p>
@@ -87,23 +256,42 @@
   </div>
 </section>
 
-<section class="resume-section">
+<section class="nyu-resume-section">
   <h3>Education</h3>
-  <ul>
-    <li><strong>PhD, Computer Science</strong>, National Institute of Technology Calicut, 2025–2029</li>
-    <li><strong>Master in Computer Science</strong>, Government Engineering College Thrissur, 2012–2015</li>
-    <li><strong>Bachelor in Computer Science</strong>, University of Calicut, 2009–2012</li>
-  </ul>
+  <div class="nyu-entry">
+    <div class="nyu-entry-date">2025 – 2029</div>
+    <div>
+      <h4>PhD, Computer Science</h4>
+      <p>National Institute of Technology Calicut</p>
+    </div>
+  </div>
+
+  <div class="nyu-entry">
+    <div class="nyu-entry-date">2012 – 2015</div>
+    <div>
+      <h4>Master in Computer Science</h4>
+      <p>Government Engineering College Thrissur</p>
+    </div>
+  </div>
+
+  <div class="nyu-entry">
+    <div class="nyu-entry-date">2009 – 2012</div>
+    <div>
+      <h4>Bachelor in Computer Science</h4>
+      <p>University of Calicut</p>
+    </div>
+  </div>
 </section>
 
-<section class="resume-section">
-  <h3>Technical Skills</h3>
+<section class="nyu-resume-section">
+  <h3>Skills</h3>
   <p>
-    Python, SQL, Java, C++, Swift, .NET, JavaScript, Dart, PyTorch, TensorFlow,
-    Keras, OpenCV, CUDA, Docker, Power BI, Tableau.
+    Python, SQL, Java, C++, Swift, .NET, JavaScript, Dart, PyTorch,
+    TensorFlow, Keras, OpenCV, CUDA, Docker, Power BI, Tableau.
   </p>
 </section>
-<section class="resume-section">
+
+<section class="nyu-resume-section">
   <h3>Awards</h3>
   <ul>
     <li>First Prize, AI & IoT Excellence Award, IEEE UAE, 2023</li>
@@ -113,121 +301,3 @@
 </section>
 
 </div>
-
-.resume-hero {
-  padding: 70px 8vw 45px;
-  background: #57068c;
-  color: #fff;
-}
-
-.resume-hero h1 {
-  margin: 0;
-  font-family: "Source Serif 4", Georgia, serif;
-  font-size: 58px;
-  line-height: 1;
-  letter-spacing: -0.05em;
-  color: #fff;
-}
-
-.resume-hero h2 {
-  margin: 18px 0 10px;
-  font-size: 22px;
-  font-weight: 500;
-  color: rgba(255,255,255,0.9);
-}
-
-.resume-hero p,
-.resume-hero a {
-  color: rgba(255,255,255,0.85);
-}
-
-.resume-section {
-  padding: 42px 8vw;
-  border-bottom: 1px solid #e7e1eb;
-  background: #fff;
-}
-
-.resume-section h3 {
-  margin: 0 0 20px;
-  font-size: 15px;
-  font-weight: 900;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: #57068c;
-}
-
-.resume-section p,
-.resume-section li {
-  font-size: 16px;
-  line-height: 1.8;
-  color: #333;
-}
-
-.resume-item {
-  margin-bottom: 32px;
-}
-
-.resume-head {
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
-  margin-bottom: 12px;
-}
-
-.resume-head h4,
-.resume-grid h4 {
-  margin: 0 0 5px;
-  font-size: 22px;
-  font-weight: 800;
-  color: #161616;
-}
-
-.resume-head span {
-  white-space: nowrap;
-  font-size: 14px;
-  font-weight: 700;
-  color: #626262;
-}
-
-.resume-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.resume-tags span {
-  padding: 8px 13px;
-  border-radius: 999px;
-  background: #f4ecfb;
-  color: #26003f;
-  font-size: 12px;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.resume-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-
-.resume-grid > div {
-  padding: 24px;
-  border: 1px solid #e7e1eb;
-  border-radius: 18px;
-  background: #faf8fc;
-}
-
-@media screen and (max-width: 768px) {
-  .resume-hero h1 {
-    font-size: 42px;
-  }
-
-  .resume-head {
-    display: block;
-  }
-
-  .resume-grid {
-    grid-template-columns: 1fr;
-  }
-}
