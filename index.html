@@ -1,375 +1,285 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Muhammed Swavaf | Research Profile</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
-:root{
-    --primary:#57068c;
-    --primary-dark:#24003d;
-    --text:#222;
-    --muted:#666;
-    --light:#f7f3fa;
-    --border:#e8e2ee;
-    --white:#fff;
+:root {
+    --text: #1f1f1f;
+    --muted: #666;
+    --light: #f7f7f7;
+    --border: #e5e5e5;
+    --accent: #57068c;
+    --max: 980px;
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-body{
-    font-family:'Inter',sans-serif;
-    color:var(--text);
-    background:var(--white);
-    line-height:1.7;
-    font-size:16px;
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--text);
+    background: #fff;
+    line-height: 1.75;
+    font-size: 16px;
 }
 
-a{
-    color:inherit;
+a {
+    color: var(--accent);
+    text-decoration: none;
 }
 
-.top-nav{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    display:flex;
-    justify-content:center;
-    gap:34px;
-    padding:16px 20px;
-    background:rgba(255,255,255,.96);
-    border-bottom:1px solid var(--border);
-    backdrop-filter:blur(10px);
+a:hover {
+    text-decoration: underline;
 }
 
-.top-nav a{
-    text-decoration:none;
-    color:#444;
-    font-size:14px;
-    font-weight:700;
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
 }
 
-.top-nav a:hover{
-    color:var(--primary);
+.nav-inner {
+    max-width: var(--max);
+    margin: auto;
+    padding: 14px 22px;
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
 }
 
-.profile-header{
-    display:grid;
-    grid-template-columns:360px 1fr;
-    min-height:560px;
+.nav-inner a {
+    color: #333;
+    font-size: 13px;
+    font-weight: 600;
 }
 
-.profile-sidebar{
-    background:linear-gradient(160deg,var(--primary),var(--primary-dark));
-    color:#fff;
-    padding:60px 42px;
+header {
+    max-width: var(--max);
+    margin: auto;
+    padding: 80px 22px 56px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 42px;
+    align-items: start;
 }
 
-.profile-photo{
-    width:170px;
-    height:170px;
-    border-radius:50%;
-    background:#fff;
-    margin-bottom:30px;
-    overflow:hidden;
-    border:5px solid rgba(255,255,255,.25);
+.profile-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid var(--border);
 }
 
-.profile-photo img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.profile-sidebar h1{
-    font-family:'Source Serif 4',serif;
-    font-size:40px;
-    line-height:1.08;
-    margin-bottom:14px;
+h1 {
+    font-family: "Source Serif 4", serif;
+    font-size: clamp(42px, 7vw, 68px);
+    line-height: 1;
+    margin-bottom: 14px;
 }
 
-.profile-role{
-    font-size:13px;
-    letter-spacing:2px;
-    text-transform:uppercase;
-    font-weight:800;
-    margin-bottom:14px;
+.role {
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 10px;
 }
 
-.institution{
-    opacity:.92;
-    margin-bottom:28px;
+.location,
+.contact {
+    color: var(--muted);
 }
 
-.contact-info{
-    margin-top:30px;
-    font-size:15px;
+.summary {
+    margin-top: 28px;
+    max-width: 760px;
+    font-size: 19px;
+    color: #333;
 }
 
-.contact-info p{
-    margin-bottom:11px;
+.links {
+    margin-top: 28px;
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
 }
 
-.contact-info a{
-    color:#fff;
-    text-decoration:none;
-    border-bottom:1px solid rgba(255,255,255,.45);
+.links a {
+    font-size: 14px;
+    font-weight: 600;
 }
 
-.academic-links{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-    margin-top:30px;
+.metrics {
+    max-width: var(--max);
+    margin: auto;
+    padding: 0 22px 56px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
 }
 
-.academic-links a{
-    text-decoration:none;
-    font-size:12px;
-    font-weight:800;
-    letter-spacing:.7px;
-    text-transform:uppercase;
-    padding:7px 12px;
-    border-radius:20px;
-    background:rgba(255,255,255,.14);
+.metric {
+    border-top: 1px solid var(--border);
+    padding-top: 18px;
 }
 
-.profile-main{
-    padding:80px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+.metric strong {
+    display: block;
+    font-size: 30px;
+    color: var(--accent);
 }
 
-.profile-main h1{
-    font-family:'Source Serif 4',serif;
-    font-size:64px;
-    line-height:1;
-    margin-bottom:26px;
-    color:var(--primary-dark);
+.metric span {
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-.profile-main p{
-    font-size:21px;
-    max-width:900px;
-    color:#333;
+section {
+    border-top: 1px solid var(--border);
 }
 
-.metrics{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:18px;
-    margin-top:42px;
-    max-width:900px;
+.section-inner {
+    max-width: var(--max);
+    margin: auto;
+    padding: 58px 22px;
 }
 
-.metric{
-    border:1px solid var(--border);
-    padding:26px 20px;
-    text-align:center;
-    background:#fff;
+.section-title {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 28px;
 }
 
-.metric h3{
-    font-size:40px;
-    color:var(--primary);
-    line-height:1;
-    margin-bottom:8px;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 44px;
 }
 
-.metric p{
-    font-size:12px;
-    text-transform:uppercase;
-    font-weight:800;
-    letter-spacing:.8px;
-    color:#555;
+.item h3 {
+    font-size: 21px;
+    margin-bottom: 8px;
 }
 
-.section{
-    padding:65px 8%;
-    border-top:1px solid var(--border);
+.item p,
+.item li {
+    color: #444;
 }
 
-.section-inner{
-    max-width:1200px;
-    margin:auto;
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.section-title{
-    color:var(--primary);
-    font-size:13px;
-    letter-spacing:3px;
-    text-transform:uppercase;
-    font-weight:800;
-    margin-bottom:34px;
+.tags span {
+    background: var(--light);
+    border: 1px solid var(--border);
+    padding: 7px 13px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
 }
 
-.section p{
-    max-width:960px;
+.timeline {
+    display: grid;
+    gap: 34px;
 }
 
-.entry{
-    display:grid;
-    grid-template-columns:210px 1fr;
-    gap:42px;
-    margin-bottom:42px;
+.entry {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 34px;
 }
 
-.entry-date{
-    color:var(--primary);
-    font-size:13px;
-    font-weight:800;
-    text-transform:uppercase;
+.date {
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
-.entry-content h3{
-    font-size:26px;
-    margin-bottom:6px;
+.entry h3 {
+    font-size: 22px;
+    margin-bottom: 4px;
 }
 
-.entry-content strong{
-    color:#444;
+.entry strong {
+    display: block;
+    margin-bottom: 10px;
+    color: #444;
 }
 
-.entry-content ul{
-    margin-top:14px;
-    padding-left:20px;
+ul {
+    padding-left: 20px;
 }
 
-.entry-content li{
-    margin-bottom:8px;
+li {
+    margin-bottom: 8px;
 }
 
-.interests,
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
+.publication {
+    padding: 22px 0;
+    border-bottom: 1px solid var(--border);
 }
 
-.interests span{
-    border:1px solid var(--primary);
-    color:var(--primary);
-    padding:8px 15px;
-    border-radius:30px;
-    font-size:12px;
-    font-weight:800;
-    text-transform:uppercase;
+.publication:last-child {
+    border-bottom: none;
 }
 
-.skills span{
-    background:var(--light);
-    color:var(--primary);
-    padding:8px 14px;
-    border-radius:20px;
-    font-weight:700;
+.publication strong {
+    color: var(--text);
 }
 
-.research-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:24px;
+footer {
+    border-top: 1px solid var(--border);
+    padding: 34px 22px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
 }
 
-.research-card{
-    border:1px solid var(--border);
-    padding:28px;
-    border-radius:14px;
-    background:#fff;
-}
-
-.research-card h3{
-    font-size:22px;
-    margin-bottom:12px;
-    color:var(--primary-dark);
-}
-
-.publication{
-    padding:24px 0;
-    border-bottom:1px solid var(--border);
-}
-
-.publication p{
-    max-width:1000px;
-}
-
-.publication strong{
-    color:var(--primary-dark);
-}
-
-.awards{
-    padding-left:20px;
-}
-
-.awards li{
-    margin-bottom:12px;
-}
-
-.footer{
-    background:var(--primary-dark);
-    color:#fff;
-    padding:34px 8%;
-    text-align:center;
-    font-size:14px;
-}
-
-.footer span{
-    opacity:.8;
-}
-
-@media(max-width:950px){
-    .top-nav{
-        flex-wrap:wrap;
-        gap:18px;
+@media (max-width: 760px) {
+    header {
+        grid-template-columns: 1fr;
+        padding-top: 54px;
     }
 
-    .profile-header{
-        grid-template-columns:1fr;
+    .metrics,
+    .grid {
+        grid-template-columns: 1fr;
     }
 
-    .profile-main{
-        padding:52px 30px;
-    }
-
-    .profile-main h1{
-        font-size:42px;
-    }
-
-    .profile-main p{
-        font-size:18px;
-    }
-
-    .entry{
-        grid-template-columns:1fr;
-        gap:10px;
-    }
-
-    .metrics{
-        grid-template-columns:repeat(2,1fr);
-    }
-}
-
-@media(max-width:520px){
-    .metrics{
-        grid-template-columns:1fr;
-    }
-
-    .profile-sidebar{
-        padding:45px 28px;
-    }
-
-    .section{
-        padding:50px 7%;
+    .entry {
+        grid-template-columns: 1fr;
+        gap: 8px;
     }
 }
 </style>
@@ -377,551 +287,355 @@ a{
 
 <body>
 
-<nav class="top-nav">
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#projects">Projects</a>
-    <a href="#appointments">Appointments</a>
-    <a href="#education">Education</a>
-    <a href="#publications">Publications</a>
-    <a href="#awards">Awards</a>
-    <a href="#contact">Contact</a>
+<nav>
+    <div class="nav-inner">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#appointments">Appointments</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Publications</a>
+        <a href="#awards">Awards</a>
+        <a href="#contact">Contact</a>
+    </div>
 </nav>
 
-<header class="profile-header" id="about">
+<header id="about">
+    <div class="profile-photo">
+        <img src="https://raw.githubusercontent.com/swavafup/smartbookai/main/milestone.jpg" alt="Muhammed Swavaf">
+    </div>
 
-<aside class="profile-sidebar">
+    <div>
+        <h1>Muhammed Swavaf</h1>
+        <p class="role">Researcher · AI, Computer Vision & Robotics</p>
+        <p class="location">United Arab Emirates University · AI and Robotics Lab</p>
+        <p class="location">Abu Dhabi, United Arab Emirates</p>
 
-<div class="profile-photo">
-    <img src="https://raw.githubusercontent.com/swavafup/smartbookai/main/milestone.jpg" alt="Muhammed Swavaf">
-</div>
+        <p class="summary">
+            I work across artificial intelligence, computer vision, robotics, geospatial intelligence,
+            medical imaging, and autonomous systems. My research focuses on intelligent perception,
+            UAV imagery, road defect detection, semantic segmentation, vision transformers,
+            driver distraction analysis, humanoid agents, and reproducible AI systems.
+        </p>
 
-<h2>Muhammed Swavaf</h2>
-
-<p class="profile-role">
-Researcher
-</p>
-
-<p class="institution">
-United Arab Emirates University<br>
-AI and Robotics Lab
-</p>
-
-<div class="contact-info" id="contact">
-    <p>📧 swavaf@hotmail.com</p>
-    <p>📍 Abu Dhabi, United Arab Emirates</p>
-    <p>
-        <a href="https://www.linkedin.com/in/muhammed-swavaf/" target="_blank">
-            LinkedIn Profile
-        </a>
-    </p>
-</div>
-
-<div class="academic-links">
-    <a href="https://scholar.google.com/citations?user=Ow-hR30AAAAJ" target="_blank">Google Scholar</a>
-    <a href="https://orcid.org/0009-0008-4545-8003" target="_blank">ORCID</a>
-    <a href="https://github.com/swavafup" target="_blank">GitHub</a>
-    <a href="https://www.researchgate.net/profile/Muhammed-Swavaf" target="_blank">ResearchGate</a>
-</div>
-
-</aside>
-
-<main class="profile-main">
-<h2>Profile</h2>
-
-<p>
-Muhammed Swavaf is a Researcher at the United Arab Emirates University, 
-working across artificial intelligence, computer vision, deep learning, robotics, 
-geospatial intelligence, medical imaging, and autonomous systems. His research
-focuses on intelligent perception systems, UAV/drone imagery, road defect detection,
-semantic segmentation, vision transformers, driver distraction analysis, humanoid agents,
-GPU-accelerated deep learning, and reproducible AI research.
-</p>
-
-<div class="metrics">
-
-<div class="metric">
-    <h3>7+</h3>
-    <p>Years Experience</p>
-</div>
-
-<div class="metric">
-    <h3>30+</h3>
-    <p>Students Mentored</p>
-</div>
-
-<div class="metric">
-    <h3>11+</h3>
-    <p>Publications</p>
-</div>
-
-<div class="metric">
-    <h3>4+</h3>
-    <p>Awards</p>
-</div>
-
-</div>
-
-</main>
-
+        <div class="links" id="contact">
+            <a href="mailto:swavaf@hotmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/muhammed-swavaf/" target="_blank">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=Ow-hR30AAAAJ" target="_blank">Google Scholar</a>
+            <a href="https://orcid.org/0009-0008-4545-8003" target="_blank">ORCID</a>
+            <a href="https://github.com/swavafup" target="_blank">GitHub</a>
+            <a href="https://www.researchgate.net/profile/Muhammed-Swavaf" target="_blank">ResearchGate</a>
+        </div>
+    </div>
 </header>
 
-<section class="section">
-<div class="section-inner">
-
-<div class="section-title">Research Interests</div>
-
-<div class="interests">
-    <span>Computer Vision</span>
-    <span>Deep Learning</span>
-    <span>Vision Transformers</span>
-    <span>Robotics</span>
-    <span>Autonomous Systems</span>
-    <span>Object Detection</span>
-    <span>Semantic Segmentation</span>
-    <span>Medical Imaging</span>
-    <span>Geospatial AI</span>
-    <span>Generative AI</span>
-    <span>Natural Language Processing</span>
-    <span>GPU Computing</span>
-    <span>Human-Robot Interaction</span>
-    <span>Reproducible AI</span>
+<div class="metrics">
+    <div class="metric">
+        <strong>7+</strong>
+        <span>Years Experience</span>
+    </div>
+    <div class="metric">
+        <strong>30+</strong>
+        <span>Students Mentored</span>
+    </div>
+    <div class="metric">
+        <strong>11+</strong>
+        <span>Publications</span>
+    </div>
+    <div class="metric">
+        <strong>4+</strong>
+        <span>Awards</span>
+    </div>
 </div>
 
-</div>
+<section>
+    <div class="section-inner">
+        <div class="section-title">Research Interests</div>
+
+        <div class="tags">
+            <span>Computer Vision</span>
+            <span>Deep Learning</span>
+            <span>Vision Transformers</span>
+            <span>Robotics</span>
+            <span>Autonomous Systems</span>
+            <span>Object Detection</span>
+            <span>Semantic Segmentation</span>
+            <span>Medical Imaging</span>
+            <span>Geospatial AI</span>
+            <span>Generative AI</span>
+            <span>NLP</span>
+            <span>GPU Computing</span>
+            <span>Human-Robot Interaction</span>
+            <span>Reproducible AI</span>
+        </div>
+    </div>
 </section>
 
-<section class="section" id="research">
-<div class="section-inner">
+<section id="research">
+    <div class="section-inner">
+        <div class="section-title">Current Research</div>
 
-<div class="section-title">Current Research</div>
+        <div class="grid">
+            <div class="item">
+                <h3>Autonomous Perception</h3>
+                <p>Computer vision pipelines for autonomous navigation, robotics, and real-time environmental understanding.</p>
+            </div>
 
-<div class="research-grid">
+            <div class="item">
+                <h3>Geospatial AI & Smart Mobility</h3>
+                <p>UAV imagery, road defect detection, crack segmentation, GIS analytics, and transportation intelligence.</p>
+            </div>
 
-<div class="research-card">
-    <h3>AI-Based Autonomous Perception</h3>
-    <p>
-        Developing robust computer vision pipelines for autonomous navigation,
-        intelligent robotics, and real-time environmental understanding.
-    </p>
-</div>
+            <div class="item">
+                <h3>Vision Transformers</h3>
+                <p>Transformer-based architectures for segmentation, object detection, crack detection, and visual reasoning.</p>
+            </div>
 
-<div class="research-card">
-    <h3>Geospatial AI & Smart Mobility</h3>
-    <p>
-        Building UAV/drone imagery-based object detection, road defect detection,
-        crack segmentation, and transportation analytics systems using deep learning,
-        GIS, and high-performance GPU computing.
-    </p>
-</div>
+            <div class="item">
+                <h3>Medical Imaging AI</h3>
+                <p>Deep learning for MRI-based brain tumor classification, segmentation, and foundation model evaluation.</p>
+            </div>
 
-<div class="research-card">
-    <h3>Vision Transformers</h3>
-    <p>
-        Exploring transformer-based architectures for scene understanding,
-        semantic segmentation, object detection, crack detection, and visual reasoning.
-    </p>
-</div>
+            <div class="item">
+                <h3>Human-Robot Interaction</h3>
+                <p>Humanoid agents, emotional perception, driver reminders, sentiment analysis, and AI-assisted education.</p>
+            </div>
 
-<div class="research-card">
-    <h3>Medical Imaging AI</h3>
-    <p>
-        Conducting deep learning research on MRI-based brain tumor classification,
-        segmentation, and evaluation of foundation models such as Segment Anything Model.
-    </p>
-</div>
-
-<div class="research-card">
-    <h3>Human-Robot Interaction</h3>
-    <p>
-        Studying emotional perception, humanoid agents, driver reminders, sentiment analysis,
-        NLP, and AI-based educational interaction systems.
-    </p>
-</div>
-
-<div class="research-card">
-    <h3>Applied Deep Learning Systems</h3>
-    <p>
-        Building scalable AI systems using Python, PyTorch, TensorFlow, OpenCV,
-        CUDA-enabled GPU computing, NVIDIA DGX-1, A100 HPC clusters, and reproducible workflows.
-    </p>
-</div>
-</div>
-
-</div>
+            <div class="item">
+                <h3>Applied Deep Learning Systems</h3>
+                <p>Scalable AI systems using Python, PyTorch, TensorFlow, OpenCV, CUDA, DGX-1, A100 clusters, and reproducible workflows.</p>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section class="section" id="projects">
-<div class="section-inner">
+<section id="projects">
+    <div class="section-inner">
+        <div class="section-title">Selected Projects</div>
 
-<div class="section-title">Selected Projects</div>
+        <div class="grid">
+            <div class="item">
+                <h3>Research Applications Portal</h3>
+                <p>Built a CIT research platform using SharePoint, Power Apps, and Power BI for research workflows and reporting.</p>
+            </div>
 
-<div class="research-grid">
+            <div class="item">
+                <h3>HPC Applications</h3>
+                <p>Optimized deep learning training and deployment using NVIDIA DGX-1 and A100 GPU infrastructure.</p>
+            </div>
 
-<div class="research-card">
-    <h3>Research Applications Portal</h3>
-    <p>
-        Developed a comprehensive CIT research website using Microsoft SharePoint,
-        Power Apps, and Power BI, including request management, role-based access control,
-        research lab pages, and graduate studies information.
-    </p>
-</div>
+            <div class="item">
+                <h3>Crack Detection</h3>
+                <p>Developed vision transformer models for detecting and geolocating surface cracks from high-resolution imagery.</p>
+            </div>
 
-<div class="research-card">
-    <h3>HPC Applications</h3>
-    <p>
-        Leveraged NVIDIA DGX-1 and A100 systems to optimize training and deployment of
-        deep learning models, and designed a user-friendly interface for researchers and
-        students to access GPU resources.
-    </p>
-</div>
+            <div class="item">
+                <h3>Driver Distraction Analysis</h3>
+                <p>Studied driver responses to text, image, alarm, and voice reminders in simulator-based environments.</p>
+            </div>
 
-<div class="research-card">
-    <h3>Crack Detection</h3>
-    <p>
-        Collaborated with the Emirates Center for Mobility Research to develop
-        vision transformer-based models for detecting and geolocating surface cracks
-        in stone floor tiles and pavements using high-resolution geospatial imagery.
-    </p>
-</div>
+            <div class="item">
+                <h3>Medical Imaging</h3>
+                <p>Conducted brain tumor classification and segmentation research using deep learning methods.</p>
+            </div>
 
-<div class="research-card">
-    <h3>Driver Distraction Analysis</h3>
-    <p>
-        Developed simulator-based systems to study driver responses to text, image,
-        alarm, and voice command reminders, contributing insights into human-vehicle
-        interaction in autonomous vehicles.
-    </p>
-</div>
-
-<div class="research-card">
-    <h3>Medical Imaging</h3>
-    <p>
-        Conducted computer vision research for brain tumor classification and segmentation
-        using deep learning methodologies in association with data science and analytics teams.
-    </p>
-</div>
-
-<div class="research-card">
-    <h3>Humanoid Agents</h3>
-    <p>
-        Partnered with Western Sydney University to study emotional perception and responses
-        to auditory changes in humanoid agents using machine learning and behavioral analysis.
-    </p>
-</div>
-
-</div>
-
-</div>
+            <div class="item">
+                <h3>Humanoid Agents</h3>
+                <p>Studied emotional perception and auditory response behavior in humanoid agents with Western Sydney University.</p>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section class="section" id="appointments">
-<div class="section-inner">
+<section id="appointments">
+    <div class="section-inner">
+        <div class="section-title">Appointments</div>
 
-<div class="section-title">Appointments</div>
+        <div class="timeline">
+            <div class="entry">
+                <div class="date">2022 – Present</div>
+                <div>
+                    <h3>Research Assistant · Data Scientist</h3>
+                    <strong>United Arab Emirates University, Al Ain, UAE</strong>
+                    <ul>
+                        <li>Develop AI-powered object detection and segmentation models for geospatial and transportation applications.</li>
+                        <li>Train deep learning models on large-scale geospatial and medical datasets using DGX-1 and A100 clusters.</li>
+                        <li>Build humanoid interaction systems using NAO and Pepper robots.</li>
+                        <li>Develop SharePoint, Power Apps, Power BI, and Tableau systems for research automation and analytics.</li>
+                        <li>Mentor and supervise 30+ student research and development projects.</li>
+                    </ul>
+                </div>
+            </div>
 
-<div class="entry">
-    <div class="entry-date">2022 – Present</div>
-    <div class="entry-content">
-        <h3>Research Assistant · Data Scientist</h3>
-        <strong>United Arab Emirates University, Al Ain, UAE</strong>
-        <ul>
-            <li>Develop AI-powered object detection models using UAV/drone imagery for geospatial intelligence and transportation analytics.</li>
-            <li>Train deep learning models on large-scale geospatial and medical datasets using NVIDIA DGX-1 and A100 HPC clusters.</li>
-            <li>Build CNN and Vision Transformer models for object detection, segmentation, road defect detection, and smart mobility applications.</li>
-            <li>Develop AI-driven humanoid interaction systems using NAO and Pepper robots.</li>
-            <li>Explore AI applications in education using NLP, sentiment analysis, and emotion recognition.</li>
-            <li>Conduct medical imaging research including brain tumor classification and segmentation.</li>
-            <li>Design scalable data pipelines for transportation, remote sensing, and geospatial datasets.</li>
-            <li>Build SharePoint, Power Apps, Power BI, and Tableau systems to automate research workflows and visualization dashboards.</li>
-            <li>Collaborate with UAE Ministry of Education, Western Sydney University, KFSHRC Jeddah, transportation agencies, and industry partners.</li>
-            <li>Mentor and supervise 30+ student research and development projects.</li>
-        </ul>
+            <div class="entry">
+                <div class="date">2019 – 2022</div>
+                <div>
+                    <h3>Lead Software Developer</h3>
+                    <strong>Bakaal Technologies LLC, Dubai, UAE</strong>
+                    <ul>
+                        <li>Developed Flutter mobile applications, .NET web systems, REST APIs, and business intelligence dashboards.</li>
+                        <li>Analyzed datasets for financial decision-making and mentored junior developers.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="date">2017 – 2018</div>
+                <div>
+                    <h3>Software Developer</h3>
+                    <strong>Lulu Group International, Cochin, India</strong>
+                    <ul>
+                        <li>Built Ionic e-commerce mobile apps, .NET applications, REST APIs, and A/B testing systems.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="date">2016</div>
+                <div>
+                    <h3>Developer Internship</h3>
+                    <strong>Tridz Technologies, Bangalore, India</strong>
+                    <ul>
+                        <li>Designed and developed native and hybrid mobile applications.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-
-<div class="entry">
-    <div class="entry-date">2019 – 2022</div>
-    <div class="entry-content">
-        <h3>Lead Software Developer</h3>
-        <strong>Bakaal Technologies LLC, Dubai, UAE</strong>
-        <ul>
-            <li>Designed and developed native and hybrid Flutter financial mobile applications for Android and iOS.</li>
-            <li>Created .NET web applications and REST APIs for business functionality and finance integrations.</li>
-            <li>Analyzed large datasets to identify actionable insights, trends, and patterns for financial decision-making.</li>
-            <li>Built dashboards using Tableau, Power BI, and Google Analytics for business intelligence and stakeholder reporting.</li>
-            <li>Mentored junior developers and interns on software engineering practices.</li>
-        </ul>
-    </div>
-</div>
-
-<div class="entry">
-    <div class="entry-date">2017 – 2018</div>
-    <div class="entry-content">
-        <h3>Software Developer</h3>
-        <strong>Lulu Group International, Cochin, India</strong>
-        <ul>
-            <li>Designed and developed native and hybrid Ionic e-commerce mobile applications for Android and iOS.</li>
-            <li>Created .NET web applications and REST APIs for retail business systems.</li>
-            <li>Implemented A/B testing frameworks for continuous improvement of e-commerce platforms.</li>
-        </ul>
-    </div>
-</div>
-
-<div class="entry">
-    <div class="entry-date">2016</div>
-    <div class="entry-content">
-        <h3>Developer Internship</h3>
-        <strong>Tridz Technologies, Bangalore, India</strong>
-        <ul>
-            <li>Designed and developed native and hybrid mobile applications for Android and iOS platforms.</li>
-        </ul>
-    </div>
-</div>
-
-</div>
 </section>
 
-<section class="section" id="education">
-<div class="section-inner">
+<section id="education">
+    <div class="section-inner">
+        <div class="section-title">Education</div>
 
-<div class="section-title">Education</div>
+        <div class="timeline">
+            <div class="entry">
+                <div class="date">2025 – 2029</div>
+                <div>
+                    <h3>PhD in Computer Science</h3>
+                    <p>National Institute of Technology Calicut</p>
+                </div>
+            </div>
 
-<div class="entry">
-    <div class="entry-date">2025 – 2029</div>
-    <div class="entry-content">
-        <h3>PhD in Computer Science</h3>
-        <p>National Institute of Technology Calicut</p>
+            <div class="entry">
+                <div class="date">2012 – 2015</div>
+                <div>
+                    <h3>Master in Computer Applications</h3>
+                    <p>Government Engineering College Thrissur</p>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="date">2009 – 2012</div>
+                <div>
+                    <h3>BSc in Computer Science with Mathematics</h3>
+                    <p>University of Calicut</p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+</section>
 
-<div class="entry">
-    <div class="entry-date">2012 – 2015</div>
-    <div class="entry-content">
-        <h3>Master in Computer Applications</h3>
-        <p>Government Engineering College Thrissur</p>
+<section id="publications">
+    <div class="section-inner">
+        <div class="section-title">Selected Publications</div>
+
+        <div class="publication">
+            <p><strong>Zhao Zou, Fady Alnajjar, Michael Lwin, Abdullah Al Mahmud, Aila Khan, Muhammed Swavaf, Omar Mubin.</strong>
+            “A Pilot Study on the Effectiveness of Text and Humanoid Voice Reminders for Drivers in a Simulator-Based Environment.”
+            <em>IEEE International Conference on Activity and Behavior Computing</em>, 2025.</p>
+        </div>
+
+        <div class="publication">
+            <p><strong>Luqman Ali, Muhammed Swavaf, Fady Alnajjar, Zhao Zou, Medha Mohan, Omar Mubin, Hamad Al Jassmi.</strong>
+            “Enhancing road safety with DL vision: Do driver distraction alerts hold the key?”
+            <em>Neural Computing and Applications</em>, 2025.</p>
+        </div>
+
+        <div class="publication">
+            <p><strong>Zhao Zou, Fady Alnajjar, Michael Lwin, Luqman Ali, Hamad Al Jassmi, Omar Mubin, Muhammed Swavaf.</strong>
+            “A preliminary simulator study on exploring responses of drivers to driving system reminders on four stimuli in vehicles.”
+            <em>Scientific Reports</em>, 2025.</p>
+        </div>
+
+        <div class="publication">
+            <p><strong>Luqman Ali, Medha Mohan, Muhammed Swavaf, Fady Alnajjar, Hamad Aljassmi, Adriaan De Man.</strong>
+            “SWIN and Vision Transformer-Driven Crack Detection in the Al Qattara Oasis, UAE.”
+            <em>IEEE/ACM International Conference on Big Data Computing</em>, 2024.</p>
+        </div>
+
+        <div class="publication">
+            <p><strong>Luqman Ali, Fady Alnajjar, Muhammed Swavaf, Omar Elharrouss, Alaa Ali Abd-alrazaq, Rafat Damseh.</strong>
+            “Evaluating Segment Anything Model on MRI scans of brain tumors.”
+            <em>Scientific Reports</em>, 2024.</p>
+        </div>
+
+        <div class="publication">
+            <p><strong>Luqman Ali, Hamad Aljassmi, Muhammed Swavaf, Wasif Khan, Fady Alnajjar.</strong>
+            “RS-Net: Residual Sharp U-Net architecture for pavement crack segmentation and severity assessment.”
+            <em>Journal of Big Data</em>, 2024.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="section-inner">
+        <div class="section-title">Technical Expertise</div>
+
+        <div class="tags">
+            <span>Python</span>
+            <span>PyTorch</span>
+            <span>TensorFlow</span>
+            <span>OpenCV</span>
+            <span>Scikit-learn</span>
+            <span>CUDA</span>
+            <span>DGX-1</span>
+            <span>A100 GPU</span>
+            <span>Docker</span>
+            <span>Kubernetes</span>
+            <span>Flutter</span>
+            <span>.NET</span>
+            <span>SQL</span>
+            <span>Power BI</span>
+            <span>Tableau</span>
+            <span>SharePoint</span>
+            <span>ArcGIS</span>
+            <span>QGIS</span>
+        </div>
+    </div>
+</section>
+
+<section id="awards">
+    <div class="section-inner">
+        <div class="section-title">Awards & Recognition</div>
+
+        <ul>
+            <li>Appreciation Award, DRIFTx Exhibition, UAEU Associate Provost for Research, 2024.</li>
+            <li>First Prize, AI and IoT Excellence Award, Government Track, IEEE Global Conference on AI & IoT, 2023.</li>
+            <li>First Prize, UAE Hackathon Researchers Track, TDRA UAE, 2023.</li>
+            <li>Best Demonstration Award, Abu Dhabi AI Connect, Technology Innovation Institute Abu Dhabi, 2022.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <div class="section-inner">
+        <div class="section-title">Research Vision</div>
+
         <p>
-            Main project: Intelligent Mobile Emergency Road Assistance Tool,
-            a GPS-based web and Android application for rapid vehicle service response.
+            My long-term research goal is to develop intelligent perception systems capable of understanding
+            complex real-world environments through machine learning, computer vision, multimodal reasoning,
+            and scalable AI infrastructure. I aim to bridge foundational AI research with deployable autonomous
+            systems, smart mobility, medical imaging, human-robot interaction, and practical intelligent applications
+            with measurable social and scientific impact.
         </p>
     </div>
-</div>
-    
-<div class="entry">
-    <div class="entry-date">2009 – 2012</div>
-    <div class="entry-content">
-        <h3>BSc in Computer Science with Mathematics</h3>
-        <p>University of Calicut</p>
-        <p>
-            Main project: Integrated online shop locator system in .NET to enhance
-            consumer experience and accessibility.
-        </p>
-    </div>
-</div>
-
-</div>
 </section>
 
-<section class="section" id="publications">
-<div class="section-inner">
-
-<div class="section-title">Selected Publications</div>
-
-<div class="publication">
-    <p><strong>Zhao Zou, Fady Alnajjar, Michael Lwin, Abdullah Al Mahmud, Aila Khan, Muhammed Swavaf, Omar Mubin.</strong>
-    “A Pilot Study on the Effectiveness of Text and Humanoid Voice Reminders for Drivers in a Simulator-Based Environment.”
-    <em>IEEE International Conference on Activity and Behavior Computing</em>, 2025.</p>
-</div>
-
-<div class="publication">
-    <p><strong>Luqman Ali, Muhammed Swavaf, Fady Alnajjar, Zhao Zou, Medha Mohan, Omar Mubin, Hamad Al Jassmi.</strong>
-    “Enhancing road safety with DL vision: Do driver distraction alerts hold the key?”
-    <em>Neural Computing and Applications</em>, 2025.</p>
-</div>
-
-<div class="publication">
-    <p><strong>Zhao Zou, Fady Alnajjar, Michael Lwin, Luqman Ali, Hamad Al Jassmi, Omar Mubin, Muhammed Swavaf.</strong>
-    “A preliminary simulator study on exploring responses of drivers to driving system reminders on four stimuli in vehicles.”
-    <em>Scientific Reports</em>, 2025.</p>
-</div>
-
-<div class="publication">
-    <p><strong>Luqman Ali, Medha Mohan, Muhammed Swavaf, Fady Alnajjar, Hamad Aljassmi, Adriaan De Man.</strong>
-    “SWIN and Vision Transformer-Driven Crack Detection in the Al Qattara Oasis, UAE: Towards Sustainable Infrastructure Management.”
-    <em>IEEE/ACM International Conference on Big Data Computing</em>, 2024.</p>
-</div>
-
-<div class="publication">
-    <p><strong>Luqman Ali, Fady Alnajjar, Muhammed Swavaf, Omar Elharrouss, Alaa Ali Abd-alrazaq, Rafat Damseh.</strong>
-    “Evaluating Segment Anything Model on MRI scans of brain tumors.”
-    <em>Scientific Reports</em>, 2024.</p>
-</div>
-
-<div class="publication">
-    <p><strong>Fady Alnajjar, Alreem R. Alneyadi, Habiba Almetnawy, Khawla S. Alneyadi, Fatima Alhemeiri, Amna R. Alneyadi, Ahed Orabi, Muhammed Swavaf.</strong>
-    “Exploring the Pedagogical Potential of Large Language Models: A Multimodal Study on Student Learning Outcomes.”
-    <em>International Workshop on Artificial Intelligence and Education</em>, 2024.</p>
-</div>
-
-<div class="publication">
-    <p><strong>Luqman Ali, Hamad Aljassmi, Muhammed Swavaf, Wasif Khan, Fady Alnajjar.</strong>
-    “RS-Net: Residual Sharp U-Net architecture for pavement crack segmentation and severity assessment.”
-    <em>Journal of Big Data</em>, 2024.</p>
-</div>
-
-<div class="publication">
-    <p><strong>Medha Mohan, Luqman Ali, Muhammed Swavaf, Salah Bouktif, Munkhjargal Gochoo, Hamad Aljassmi, Fady Alnajjar.</strong>
-    “Navigating the YOLO landscape: A comparative study of Object detection models for Emotion Recognition.”
-    <em>IEEE</em>, 2024.</p>
-</div>
-
-<div class="publication">
-    <p><strong>Zhao Zou, Fady Alnajjar, Michael Lwin, Abdullah Al Mahmud, Muhammed Swavaf, Aila Khan, Omar Mubin.</strong>
-    “Human Perception of Emotional Responses to Changes in Auditory Attributes of Humanoid Agents.”
-    <em>International Conference on Social Robotics</em>, 2023.</p>
-</div>
-
-<div class="publication">
-    <p><strong>Medha Mohan, Fady Alnajjar, Amna Mohammed, Zouheir Trabelsi, Luqman Ali, Muhammed Swavaf.</strong>
-    “Visualizing Student Attention in Smart Classrooms: A Preliminary Study.”
-    <em>International Conference on Innovations in Information Technology</em>, 2023.</p>
-</div>
-
-<div class="publication">
-    <p><strong>Luqman Ali, Hamad Al Jassmi, Medha Mohan, Muhammed Swavaf, Fady Alnajjar, Mohammed Alameri.</strong>
-    “Crack Detection and Localization in Stone Floor Tiles using Vision Transformer approach.”
-    <em>International Symposium on Automation and Robotics in Construction</em>, 2023.</p>
-</div>
-
-</div>
-</section>
-
-<section class="section">
-<div class="section-inner">
-
-<div class="section-title">Technical Expertise</div>
-
-<div class="skills">
-    <span>Python</span>
-    <span>SQL</span>
-    <span>Java</span>
-    <span>C++</span>
-    <span>Swift</span>
-    <span>.NET</span>
-    <span>JavaScript</span>
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>Dart</span>
-    <span>PyTorch</span>
-    <span>TensorFlow</span>
-    <span>Keras</span>
-    <span>Scikit-learn</span>
-    <span>OpenCV</span>
-    <span>NumPy</span>
-    <span>Pandas</span>
-    <span>PySpark</span>
-    <span>CUDA</span>
-    <span>NVIDIA DGX-1</span>
-    <span>A100 GPU</span>
-    <span>Docker</span>
-    <span>Kubernetes</span>
-    <span>Flutter</span>
-    <span>React Native</span>
-    <span>Android Studio</span>
-    <span>Xcode</span>
-    <span>ArcGIS</span>
-    <span>QGIS</span>
-    <span>SharePoint</span>
-    <span>Power Apps</span>
-    <span>Power BI</span>
-    <span>Tableau</span>
-    <span>Google Analytics</span>
-    <span>Fusion 360</span>
-    <span>Ultimaker Cura</span>
-    <span>Raspberry Pi</span>
-</div>
-
-</div>
-</section>
-
-<section class="section" id="awards">
-<div class="section-inner">
-
-<div class="section-title">Awards & Recognition</div>
-
-<ul class="awards">
-    <li>Appreciation Award for participation at DRIFTx Exhibition, Abu Dhabi, UAEU Associate Provost for Research, 2024.</li>
-    <li>First Prize, AI and IoT Excellence Award, Government Track, IEEE Global Conference on AI & IoT, UAE, 2023.</li>
-    <li>First Prize, UAE Hackathon Researchers Track, Telecommunications and Digital Government Regulatory Authority, UAE, 2023.</li>
-    <li>Best Demonstration Award, Abu Dhabi AI Connect, Technology Innovation Institute Abu Dhabi, 2022.</li>
-</ul>
-
-</div>
-</section>
-
-<section class="section">
-<div class="section-inner">
-
-<div class="section-title">Research Vision</div>
-
-<p>
-My long-term research goal is to develop intelligent perception systems capable of
-understanding complex real-world environments through advanced machine learning,
-computer vision, multimodal reasoning, and scalable AI infrastructure. I am particularly
-interested in bridging foundational AI research with deployable autonomous systems,
-smart mobility, medical imaging, human-robot interaction, and practical intelligent
-applications that create measurable social and scientific impact.
-</p>
-
-</div>
-</section>
-
-<footer class="footer">
-    <p>
-        © 2026 Muhammed Swavaf
-        <!-- <span id="footerVisitorCount">...</span> visitors -->
-    </p>
+<footer>
+    © 2026 Muhammed Swavaf
 </footer>
-
-<script>
-async function loadVisitors() {
-    try {
-        const response = await fetch(
-            "https://api.countapi.xyz/hit/swavaf-research-profile/visits"
-        );
-
-        const data = await response.json();
-        const count = data.value.toLocaleString();
-
-        const visitorCount = document.getElementById("visitorCount");
-        const footerVisitorCount = document.getElementById("footerVisitorCount");
-
-        if (visitorCount) {
-            visitorCount.textContent = count;
-        }
-
-        if (footerVisitorCount) {
-            footerVisitorCount.textContent = count;
-        }
-
-    } catch (error) {
-        const visitorCount = document.getElementById("visitorCount");
-        const footerVisitorCount = document.getElementById("footerVisitorCount");
-
-        if (visitorCount) {
-            visitorCount.textContent = "--";
-        }
-
-        if (footerVisitorCount) {
-            footerVisitorCount.textContent = "--";
-        }
-
-        console.error(error);
-    }
-}
-
-loadVisitors();
-</script>
 
 </body>
 </html>
+```
