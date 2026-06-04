@@ -18,6 +18,8 @@
     --max: 980px;
 }
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -61,6 +63,17 @@ nav {
     display: flex;
     gap: 22px;
     flex-wrap: wrap;
+}
+
+.visitor-counter {
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.visitor-counter img {
+    max-width: 100%;
+    height: auto;
 }
 
 .nav-inner a {
@@ -633,7 +646,16 @@ footer {
 </section>
 
 <footer>
-    © 2026 Muhammed Swavaf
+    <div class="visitor-counter">
+        <a href="https://info.flagcounter.com/xKhp" target="_blank" rel="noopener">
+            <img 
+                src="https://s01.flagcounter.com/count2/xKhp/bg_FFFFFF/txt_000000/border_FFFFFF/columns_5/maxflags_10/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" 
+                alt="Page visitor counter" 
+                border="0">
+        </a>
+    </div>
+
+    <p>© 2026 Muhammed Swavaf</p>
 </footer>
 
 </body>
