@@ -4,18 +4,19 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Muhammed Swavaf | Research Profile</title>
+<title>S&S Solutions | ERP Solutions for Education and Hospitals</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
 :root {
     --text: #1f1f1f;
     --muted: #666;
-    --light: #f7f7f7;
-    --border: #e5e5e5;
-    --accent: #57068c;
-    --max: 980px;
+    --light: #f7f9fb;
+    --border: #e5e9ef;
+    --accent: #0b5cab;
+    --accent-dark: #073f78;
+    --max: 1080px;
 }
 
 * {
@@ -59,92 +60,124 @@ nav {
     margin: auto;
     padding: 14px 22px;
     display: flex;
+    justify-content: space-between;
     gap: 22px;
+    align-items: center;
     flex-wrap: wrap;
 }
 
-.visitor-counter {
-    margin-bottom: 18px;
+.logo {
+    font-weight: 800;
+    font-size: 18px;
+    color: var(--accent-dark);
+}
+
+.nav-links {
     display: flex;
-    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.visitor-counter img {
-    max-width: 100%;
-    height: auto;
-}
-
-.nav-inner a {
+.nav-links a {
     color: #333;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 header {
     max-width: var(--max);
     margin: auto;
-    padding: 80px 22px 56px;
+    padding: 88px 22px 64px;
     display: grid;
-    grid-template-columns: 150px 1fr;
-    gap: 42px;
-    align-items: start;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 54px;
+    align-items: center;
 }
 
-.profile-photo {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 1px solid var(--border);
-}
-
-.profile-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.badge {
+    display: inline-block;
+    background: #eef6ff;
+    color: var(--accent);
+    border: 1px solid #d5e9ff;
+    padding: 7px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 800;
+    margin-bottom: 22px;
 }
 
 h1 {
     font-family: "Source Serif 4", serif;
-    font-size: clamp(42px, 7vw, 68px);
+    font-size: clamp(42px, 7vw, 70px);
     line-height: 1;
-    margin-bottom: 14px;
+    margin-bottom: 20px;
 }
 
 .role {
-    font-weight: 700;
+    font-size: 21px;
+    font-weight: 800;
     color: var(--accent);
-    margin-bottom: 10px;
-}
-
-.location,
-.contact {
-    color: var(--muted);
+    margin-bottom: 14px;
 }
 
 .summary {
-    margin-top: 28px;
     max-width: 760px;
     font-size: 19px;
     color: #333;
 }
 
+.hero-card {
+    background: var(--light);
+    border: 1px solid var(--border);
+    border-radius: 28px;
+    padding: 34px;
+}
+
+.hero-card h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: var(--accent-dark);
+}
+
+.hero-card ul {
+    padding-left: 20px;
+}
+
+.hero-card li {
+    margin-bottom: 10px;
+    color: #444;
+}
+
 .links {
-    margin-top: 28px;
+    margin-top: 30px;
     display: flex;
     gap: 14px;
     flex-wrap: wrap;
 }
 
-.links a {
+.btn {
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 999px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 800;
+    border: 1px solid var(--accent);
+}
+
+.btn.primary {
+    background: var(--accent);
+    color: #fff;
+}
+
+.btn.secondary {
+    color: var(--accent);
+    background: #fff;
 }
 
 .metrics {
     max-width: var(--max);
     margin: auto;
-    padding: 0 22px 56px;
+    padding: 0 22px 58px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 18px;
@@ -164,7 +197,7 @@ h1 {
 .metric span {
     color: var(--muted);
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -176,7 +209,7 @@ section {
 .section-inner {
     max-width: var(--max);
     margin: auto;
-    padding: 58px 22px;
+    padding: 60px 22px;
 }
 
 .section-title {
@@ -194,9 +227,14 @@ section {
     gap: 28px 44px;
 }
 
+.item {
+    background: #fff;
+}
+
 .item h3 {
-    font-size: 21px;
+    font-size: 22px;
     margin-bottom: 8px;
+    color: var(--accent-dark);
 }
 
 .item p,
@@ -213,74 +251,76 @@ section {
 .tags span {
     background: var(--light);
     border: 1px solid var(--border);
-    padding: 7px 13px;
+    padding: 8px 14px;
     border-radius: 999px;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
-.timeline {
+.split {
     display: grid;
-    gap: 34px;
+    grid-template-columns: 1fr 1fr;
+    gap: 44px;
 }
 
-.entry {
+.panel {
+    background: var(--light);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 30px;
+}
+
+.panel h3 {
+    font-size: 24px;
+    color: var(--accent-dark);
+    margin-bottom: 12px;
+}
+
+.panel ul {
+    padding-left: 20px;
+}
+
+.panel li {
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.process {
     display: grid;
-    grid-template-columns: 160px 1fr;
-    gap: 34px;
+    gap: 24px;
 }
 
-.date {
+.step {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.step-number {
     color: var(--accent);
-    font-size: 13px;
     font-weight: 800;
+    font-size: 15px;
     text-transform: uppercase;
 }
 
-.entry h3 {
+.step h3 {
     font-size: 22px;
     margin-bottom: 4px;
 }
 
-.entry strong {
-    display: block;
-    margin-bottom: 10px;
-    color: #444;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 8px;
-}
-
-.publication {
-    padding: 22px 0;
-    border-bottom: 1px solid var(--border);
-}
-
-.publication:last-child {
-    border-bottom: none;
-}
-
-.publication strong {
-    color: var(--text);
-}
-
 footer {
     border-top: 1px solid var(--border);
-    padding: 34px 22px;
+    padding: 38px 22px;
     text-align: center;
     color: var(--muted);
     font-size: 14px;
 }
 
-@media (max-width: 760px) {
-    header {
+@media (max-width: 820px) {
+    header,
+    .split {
         grid-template-columns: 1fr;
-        padding-top: 54px;
     }
 
     .metrics,
@@ -288,9 +328,9 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .entry {
+    .step {
         grid-template-columns: 1fr;
-        gap: 8px;
+        gap: 6px;
     }
 }
 </style>
@@ -300,216 +340,104 @@ footer {
 
 <nav>
     <div class="nav-inner">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
-        <a href="#appointments">Appointments</a>
-        <a href="#education">Education</a>
-        <a href="#publications">Publications</a>
-        <a href="#awards">Awards</a>
-        <a href="#contact">Contact</a>
+        <div class="logo">S&S Solutions</div>
+
+        <div class="nav-links">
+            <a href="#solutions">Solutions</a>
+            <a href="#education">Education ERP</a>
+            <a href="#hospitals">Hospital ERP</a>
+            <a href="#features">Features</a>
+            <a href="#implementation">Implementation</a>
+            <a href="#contact">Contact</a>
+        </div>
     </div>
 </nav>
 
-<header id="about">
-    <div class="profile-photo">
-        <img src="https://raw.githubusercontent.com/swavafup/smartbookai/main/milestone.jpg" alt="Muhammed Swavaf">
-    </div>
-
+<header>
     <div>
-        <h1>Muhammed Swavaf</h1>
-        <p class="role">Researcher · AI, Computer Vision & Robotics</p>
-        <p class="location">United Arab Emirates University · AI and Robotics Lab</p>
-        <p class="location">Abu Dhabi, United Arab Emirates</p>
+        <span class="badge">ERP Solutions for Education & Healthcare</span>
+
+        <h1>Smart ERP Systems for Schools, Colleges and Hospitals</h1>
+
+        <p class="role">S&S Solutions helps institutions digitize, automate and manage daily operations from one connected platform.</p>
 
         <p class="summary">
-            I work across artificial intelligence, computer vision, robotics, geospatial intelligence,
-            medical imaging, and autonomous systems. My research focuses on intelligent perception,
-            UAV imagery, road defect detection, semantic segmentation, vision transformers,
-            driver distraction analysis, humanoid agents, and reproducible AI systems.
+            We deliver reliable ERP solutions for educational institutions and healthcare organizations, helping teams manage admissions,
+            academics, finance, HR, inventory, appointments, patient workflows, reporting and administration with greater speed,
+            transparency and control.
         </p>
 
         <div class="links" id="contact">
-            <a href="mailto:swavaf@hotmail.com">Email</a>
-            <a href="https://www.linkedin.com/in/muhammed-swavaf/" target="_blank">LinkedIn</a>
-            <a href="https://scholar.google.com/citations?user=Ow-hR30AAAAJ" target="_blank">Google Scholar</a>
-            <a href="https://orcid.org/0009-0008-4545-8003" target="_blank">ORCID</a>
-            <a href="https://github.com/swavafup" target="_blank">GitHub</a>
-            <a href="https://www.researchgate.net/profile/Muhammed-Swavaf" target="_blank">ResearchGate</a>
+            <a class="btn primary" href="mailto:info@snssolutions.com">Request a Demo</a>
+            <a class="btn secondary" href="#solutions">Explore Solutions</a>
         </div>
+    </div>
+
+    <div class="hero-card">
+        <h3>One platform. Multiple departments. Better decisions.</h3>
+        <ul>
+            <li>Centralized ERP for administration, operations and reporting.</li>
+            <li>Custom modules for education and hospital workflows.</li>
+            <li>Secure access for management, staff, students, patients and departments.</li>
+            <li>Dashboards and analytics for real-time institutional visibility.</li>
+        </ul>
     </div>
 </header>
 
 <div class="metrics">
     <div class="metric">
-        <strong>7+</strong>
-        <span>Years Experience</span>
+        <strong>360°</strong>
+        <span>Institution Management</span>
     </div>
     <div class="metric">
-        <strong>30+</strong>
-        <span>Students Mentored</span>
+        <strong>2</strong>
+        <span>Core ERP Domains</span>
     </div>
     <div class="metric">
-        <strong>11+</strong>
-        <span>Publications</span>
+        <strong>24/7</strong>
+        <span>Digital Access</span>
     </div>
     <div class="metric">
-        <strong>4+</strong>
-        <span>Awards</span>
+        <strong>100%</strong>
+        <span>Customizable Modules</span>
     </div>
 </div>
 
-<section>
+<section id="solutions">
     <div class="section-inner">
-        <div class="section-title">Research Interests</div>
-
-        <div class="tags">
-            <span>Computer Vision</span>
-            <span>Deep Learning</span>
-            <span>Vision Transformers</span>
-            <span>Robotics</span>
-            <span>Autonomous Systems</span>
-            <span>Object Detection</span>
-            <span>Semantic Segmentation</span>
-            <span>Medical Imaging</span>
-            <span>Geospatial AI</span>
-            <span>Generative AI</span>
-            <span>NLP</span>
-            <span>GPU Computing</span>
-            <span>Human-Robot Interaction</span>
-            <span>Reproducible AI</span>
-        </div>
-    </div>
-</section>
-
-<section id="research">
-    <div class="section-inner">
-        <div class="section-title">Current Research</div>
+        <div class="section-title">Our ERP Solutions</div>
 
         <div class="grid">
             <div class="item">
-                <h3>Autonomous Perception</h3>
-                <p>Computer vision pipelines for autonomous navigation, robotics, and real-time environmental understanding.</p>
+                <h3>Education ERP</h3>
+                <p>
+                    A complete ERP platform for schools, colleges, universities and training centers to manage academic,
+                    administrative and financial operations from a single system.
+                </p>
             </div>
 
             <div class="item">
-                <h3>Geospatial AI & Smart Mobility</h3>
-                <p>UAV imagery, road defect detection, crack segmentation, GIS analytics, and transportation intelligence.</p>
+                <h3>Hospital ERP</h3>
+                <p>
+                    A connected ERP solution for hospitals, clinics and healthcare centers to streamline patient services,
+                    appointments, billing, pharmacy, inventory, HR and reporting.
+                </p>
             </div>
 
             <div class="item">
-                <h3>Vision Transformers</h3>
-                <p>Transformer-based architectures for segmentation, object detection, crack detection, and visual reasoning.</p>
+                <h3>Custom ERP Development</h3>
+                <p>
+                    We design and implement ERP modules based on your institution’s exact workflow, approval process,
+                    reporting needs and operational structure.
+                </p>
             </div>
 
             <div class="item">
-                <h3>Medical Imaging AI</h3>
-                <p>Deep learning for MRI-based brain tumor classification, segmentation, and foundation model evaluation.</p>
-            </div>
-
-            <div class="item">
-                <h3>Human-Robot Interaction</h3>
-                <p>Humanoid agents, emotional perception, driver reminders, sentiment analysis, and AI-assisted education.</p>
-            </div>
-
-            <div class="item">
-                <h3>Applied Deep Learning Systems</h3>
-                <p>Scalable AI systems using Python, PyTorch, TensorFlow, OpenCV, CUDA, DGX-1, A100 clusters, and reproducible workflows.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="projects">
-    <div class="section-inner">
-        <div class="section-title">Selected Projects</div>
-
-        <div class="grid">
-            <div class="item">
-                <h3>Research Applications Portal</h3>
-                <p>Built a CIT research platform using SharePoint, Power Apps, and Power BI for research workflows and reporting.</p>
-            </div>
-
-            <div class="item">
-                <h3>HPC Applications</h3>
-                <p>Optimized deep learning training and deployment using NVIDIA DGX-1 and A100 GPU infrastructure.</p>
-            </div>
-
-            <div class="item">
-                <h3>Crack Detection</h3>
-                <p>Developed vision transformer models for detecting and geolocating surface cracks from high-resolution imagery.</p>
-            </div>
-
-            <div class="item">
-                <h3>Driver Distraction Analysis</h3>
-                <p>Studied driver responses to text, image, alarm, and voice reminders in simulator-based environments.</p>
-            </div>
-
-            <div class="item">
-                <h3>Medical Imaging</h3>
-                <p>Conducted brain tumor classification and segmentation research using deep learning methods.</p>
-            </div>
-
-            <div class="item">
-                <h3>Humanoid Agents</h3>
-                <p>Studied emotional perception and auditory response behavior in humanoid agents with Western Sydney University.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="appointments">
-    <div class="section-inner">
-        <div class="section-title">Appointments</div>
-
-        <div class="timeline">
-            <div class="entry">
-                <div class="date">2022 – Present</div>
-                <div>
-                    <h3>Research Assistant · Data Scientist</h3>
-                    <strong>United Arab Emirates University, Al Ain, UAE</strong>
-                    <ul>
-                        <li>Develop AI-powered object detection and segmentation models for geospatial and transportation applications.</li>
-                        <li>Train deep learning models on large-scale geospatial and medical datasets using DGX-1 and A100 clusters.</li>
-                        <li>Build humanoid interaction systems using NAO and Pepper robots.</li>
-                        <li>Develop SharePoint, Power Apps, Power BI, and Tableau systems for research automation and analytics.</li>
-                        <li>Mentor and supervise 30+ student research and development projects.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="entry">
-                <div class="date">2019 – 2022</div>
-                <div>
-                    <h3>Lead Software Developer</h3>
-                    <strong>Bakaal Technologies LLC, Dubai, UAE</strong>
-                    <ul>
-                        <li>Developed Flutter mobile applications, .NET web systems, REST APIs, and business intelligence dashboards.</li>
-                        <li>Analyzed datasets for financial decision-making and mentored junior developers.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="entry">
-                <div class="date">2017 – 2018</div>
-                <div>
-                    <h3>Software Developer</h3>
-                    <strong>Lulu Group International, Cochin, India</strong>
-                    <ul>
-                        <li>Built Ionic e-commerce mobile apps, .NET applications, REST APIs, and A/B testing systems.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="entry">
-                <div class="date">2016</div>
-                <div>
-                    <h3>Developer Internship</h3>
-                    <strong>Tridz Technologies, Bangalore, India</strong>
-                    <ul>
-                        <li>Designed and developed native and hybrid mobile applications.</li>
-                    </ul>
-                </div>
+                <h3>Dashboards & Analytics</h3>
+                <p>
+                    Real-time dashboards help decision-makers monitor performance, finance, operations, utilization,
+                    compliance and service quality.
+                </p>
             </div>
         </div>
     </div>
@@ -517,143 +445,171 @@ footer {
 
 <section id="education">
     <div class="section-inner">
-        <div class="section-title">Education</div>
+        <div class="section-title">Education ERP</div>
 
-        <div class="timeline">
-            <div class="entry">
-                <div class="date">2025 – 2029</div>
-                <div>
-                    <h3>PhD in Computer Science</h3>
-                    <p>National Institute of Technology Calicut</p>
-                </div>
+        <div class="split">
+            <div class="panel">
+                <h3>For Schools, Colleges & Universities</h3>
+                <p>
+                    S&S Solutions Education ERP helps institutions simplify academic and administrative operations while
+                    improving communication between management, teachers, students and parents.
+                </p>
             </div>
 
-            <div class="entry">
-                <div class="date">2012 – 2015</div>
-                <div>
-                    <h3>Master in Computer Applications</h3>
-                    <p>Government Engineering College Thrissur</p>
-                </div>
-            </div>
-
-            <div class="entry">
-                <div class="date">2009 – 2012</div>
-                <div>
-                    <h3>BSc in Computer Science with Mathematics</h3>
-                    <p>University of Calicut</p>
-                </div>
+            <div class="panel">
+                <h3>Key Modules</h3>
+                <ul>
+                    <li>Admissions and student registration</li>
+                    <li>Student information management</li>
+                    <li>Attendance and timetable management</li>
+                    <li>Examination and grading</li>
+                    <li>Fee collection and finance</li>
+                    <li>Library, transport and hostel management</li>
+                    <li>Parent, student and staff portals</li>
+                    <li>Reports, dashboards and notifications</li>
+                </ul>
             </div>
         </div>
     </div>
 </section>
 
-<section id="publications">
+<section id="hospitals">
     <div class="section-inner">
-        <div class="section-title">Selected Publications</div>
+        <div class="section-title">Hospital ERP</div>
 
-        <div class="publication">
-            <p><strong>Zhao Zou, Fady Alnajjar, Michael Lwin, Abdullah Al Mahmud, Aila Khan, Muhammed Swavaf, Omar Mubin.</strong>
-            “A Pilot Study on the Effectiveness of Text and Humanoid Voice Reminders for Drivers in a Simulator-Based Environment.”
-            <em>IEEE International Conference on Activity and Behavior Computing</em>, 2025.</p>
-        </div>
+        <div class="split">
+            <div class="panel">
+                <h3>For Hospitals, Clinics & Healthcare Centers</h3>
+                <p>
+                    Our Hospital ERP improves coordination between departments, reduces manual paperwork and helps healthcare
+                    teams deliver faster, more organized and more transparent services.
+                </p>
+            </div>
 
-        <div class="publication">
-            <p><strong>Luqman Ali, Muhammed Swavaf, Fady Alnajjar, Zhao Zou, Medha Mohan, Omar Mubin, Hamad Al Jassmi.</strong>
-            “Enhancing road safety with DL vision: Do driver distraction alerts hold the key?”
-            <em>Neural Computing and Applications</em>, 2025.</p>
-        </div>
-
-        <div class="publication">
-            <p><strong>Zhao Zou, Fady Alnajjar, Michael Lwin, Luqman Ali, Hamad Al Jassmi, Omar Mubin, Muhammed Swavaf.</strong>
-            “A preliminary simulator study on exploring responses of drivers to driving system reminders on four stimuli in vehicles.”
-            <em>Scientific Reports</em>, 2025.</p>
-        </div>
-
-        <div class="publication">
-            <p><strong>Luqman Ali, Medha Mohan, Muhammed Swavaf, Fady Alnajjar, Hamad Aljassmi, Adriaan De Man.</strong>
-            “SWIN and Vision Transformer-Driven Crack Detection in the Al Qattara Oasis, UAE.”
-            <em>IEEE/ACM International Conference on Big Data Computing</em>, 2024.</p>
-        </div>
-
-        <div class="publication">
-            <p><strong>Luqman Ali, Fady Alnajjar, Muhammed Swavaf, Omar Elharrouss, Alaa Ali Abd-alrazaq, Rafat Damseh.</strong>
-            “Evaluating Segment Anything Model on MRI scans of brain tumors.”
-            <em>Scientific Reports</em>, 2024.</p>
-        </div>
-
-        <div class="publication">
-            <p><strong>Luqman Ali, Hamad Aljassmi, Muhammed Swavaf, Wasif Khan, Fady Alnajjar.</strong>
-            “RS-Net: Residual Sharp U-Net architecture for pavement crack segmentation and severity assessment.”
-            <em>Journal of Big Data</em>, 2024.</p>
+            <div class="panel">
+                <h3>Key Modules</h3>
+                <ul>
+                    <li>Patient registration and records</li>
+                    <li>Appointment and queue management</li>
+                    <li>Doctor, department and staff scheduling</li>
+                    <li>Billing, insurance and payments</li>
+                    <li>Pharmacy and medicine inventory</li>
+                    <li>Laboratory and diagnostics management</li>
+                    <li>Inpatient and outpatient workflows</li>
+                    <li>Reports, dashboards and administrative controls</li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
 
-<section>
+<section id="features">
     <div class="section-inner">
-        <div class="section-title">Technical Expertise</div>
+        <div class="section-title">Platform Features</div>
 
         <div class="tags">
-            <span>Python</span>
-            <span>PyTorch</span>
-            <span>TensorFlow</span>
-            <span>OpenCV</span>
-            <span>Scikit-learn</span>
-            <span>CUDA</span>
-            <span>DGX-1</span>
-            <span>A100 GPU</span>
-            <span>Docker</span>
-            <span>Kubernetes</span>
-            <span>Flutter</span>
-            <span>.NET</span>
-            <span>SQL</span>
-            <span>Power BI</span>
-            <span>Tableau</span>
-            <span>SharePoint</span>
-            <span>ArcGIS</span>
-            <span>QGIS</span>
+            <span>Cloud-Based ERP</span>
+            <span>Role-Based Access</span>
+            <span>Mobile Friendly</span>
+            <span>Secure Data Management</span>
+            <span>Automated Reports</span>
+            <span>Finance Management</span>
+            <span>HR & Payroll</span>
+            <span>Inventory Control</span>
+            <span>Notifications</span>
+            <span>Custom Workflows</span>
+            <span>Multi-Department Access</span>
+            <span>Management Dashboards</span>
         </div>
     </div>
 </section>
 
-<section id="awards">
+<section id="implementation">
     <div class="section-inner">
-        <div class="section-title">Awards & Recognition</div>
+        <div class="section-title">Implementation Approach</div>
 
-        <ul>
-            <li>Appreciation Award, DRIFTx Exhibition, UAEU Associate Provost for Research, 2024.</li>
-            <li>First Prize, AI and IoT Excellence Award, Government Track, IEEE Global Conference on AI & IoT, 2023.</li>
-            <li>First Prize, UAE Hackathon Researchers Track, TDRA UAE, 2023.</li>
-            <li>Best Demonstration Award, Abu Dhabi AI Connect, Technology Innovation Institute Abu Dhabi, 2022.</li>
-        </ul>
+        <div class="process">
+            <div class="step">
+                <div class="step-number">Step 01</div>
+                <div>
+                    <h3>Requirement Study</h3>
+                    <p>We understand your departments, workflows, users, approvals, reports and existing systems.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">Step 02</div>
+                <div>
+                    <h3>ERP Configuration</h3>
+                    <p>We configure modules, user roles, dashboards and workflows based on your institutional needs.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">Step 03</div>
+                <div>
+                    <h3>Data Migration & Testing</h3>
+                    <p>We support data preparation, migration, testing and validation before deployment.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">Step 04</div>
+                <div>
+                    <h3>Training & Support</h3>
+                    <p>We train administrators, staff and users, then provide ongoing technical support after launch.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
 <section>
     <div class="section-inner">
-        <div class="section-title">Research Vision</div>
+        <div class="section-title">Why Choose S&S Solutions</div>
+
+        <div class="grid">
+            <div class="item">
+                <h3>Industry-Focused ERP</h3>
+                <p>Purpose-built workflows for education and healthcare operations.</p>
+            </div>
+
+            <div class="item">
+                <h3>Scalable Architecture</h3>
+                <p>Suitable for small institutions, growing campuses, clinics and multi-department organizations.</p>
+            </div>
+
+            <div class="item">
+                <h3>Customizable Modules</h3>
+                <p>Adapt the ERP to your processes instead of forcing your team to change how they work.</p>
+            </div>
+
+            <div class="item">
+                <h3>Reliable Support</h3>
+                <p>Implementation guidance, user training and continuous support for smooth adoption.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="section-inner">
+        <div class="section-title">Contact</div>
 
         <p>
-            My long-term research goal is to develop intelligent perception systems capable of understanding
-            complex real-world environments through machine learning, computer vision, multimodal reasoning,
-            and scalable AI infrastructure. I aim to bridge foundational AI research with deployable autonomous
-            systems, smart mobility, medical imaging, human-robot interaction, and practical intelligent applications
-            with measurable social and scientific impact.
+            Ready to modernize your institution with a powerful ERP platform?
+            Contact S&S Solutions to schedule a consultation or request a product demo.
         </p>
+
+        <div class="links">
+            <a class="btn primary" href="mailto:info@snssolutions.com">Email Us</a>
+            <a class="btn secondary" href="tel:+971000000000">Call Now</a>
+        </div>
     </div>
 </section>
 
 <footer>
-    <div class="visitor-counter">
-        <a href="https://info.flagcounter.com/xKhp" target="_blank" rel="noopener">
-            <img 
-                src="https://s01.flagcounter.com/count2/xKhp/bg_FFFFFF/txt_000000/border_FFFFFF/columns_5/maxflags_10/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" 
-                alt="Page visitor counter" 
-                border="0">
-        </a>
-    </div>
-
-    <p>© 2026 Muhammed Swavaf</p>
+    <p>© 2026 S&S Solutions. ERP Solutions for Education and Hospitals.</p>
 </footer>
 
 </body>
